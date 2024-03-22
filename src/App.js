@@ -1,9 +1,13 @@
 import React from "react";
-
+import Header from "./Components/Header/Header";
+import Banner from "./Components/Banner/Banner";
+import SectionThree from "./Components/SectionThree/SectionThree";
 function App() {
   return (
     <div className="App">
-      Scion Technology
+     <Header />
+     <Banner />
+     <SectionThree />
     </div>
   );
 }
