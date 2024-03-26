@@ -3,6 +3,8 @@ import Header from "../../Components/Header/Header";
 import Banner from "../../Components/Banner/Banner";
 import SectionThree from "../../Components/SectionThree/SectionThree";
 import TextBox from "../../Components/TextBox/TextBox";
+import SliderComponent from "../../Components/SliderComponent/SliderComponent";
+
 const Home = () => {
   const heading = ["Our Proven History + Best of Staffing Since 2006"];
 
@@ -36,6 +38,7 @@ const Home = () => {
         buttonText={buttonText}
         buttonLink={buttonLink}
       />
+      <SliderComponent />
     </div>
   );
 };
