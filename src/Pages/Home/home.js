@@ -5,6 +5,7 @@ import SectionThree from "../../Components/SectionThree/SectionThree";
 import TextBox from "../../Components/TextBox/TextBox";
 import SliderComponent from "../../Components/SliderComponent/SliderComponent";
 import RecruitingSpecialties from "../../Components/RecruitingSpecialties/RecruitingSpecialties";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   const heading = ["Our Proven History + Best of Staffing Since 2006"];
@@ -41,6 +42,7 @@ const Home = () => {
       />
       <RecruitingSpecialties />
       <SliderComponent />
+      <Footer/>
     </div>
   );
 };

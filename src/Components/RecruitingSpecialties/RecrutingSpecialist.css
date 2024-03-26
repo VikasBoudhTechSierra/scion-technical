@@ -43,6 +43,7 @@
 .recruiter_card .main_card .card_header {
     padding: 5% 6% 1% 6%;
     background: #cb722d !important;
+    transition-duration: .3s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +75,10 @@
 
 .recruiter_card .main_card .card_header:hover{
     background: #f98436 !important;
+}
+
+.recruiter_card .main_card .card_header:hover .icon_section span {
+    color: #f98436;
 }
 
 .main_card .card_header .text_header{
