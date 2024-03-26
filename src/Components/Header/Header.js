@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import ScionLogo from "../../Assets/Images/scion-logo.png";
+import techsierraLogo from "../../Assets/Images/scion-logo.png";
 const header = () => {
     return (
         <div className="wrapper headerCtn">
@@ -11,8 +11,8 @@ const header = () => {
                         <a href="#FIXME" title="Search Jobs">search jobs</a> | <a href="#FIXME" title="Hire Staff" >hire staff</a>
                     </div>
                 </li>
-                <li className="scionLogo">
-                    <a href="#FIXME" title="Scion Technology"><img src={ScionLogo} alt="Scion Technology" /></a>
+                <li className="techsierraLogo">
+                    <a href="#FIXME" title="techsierra Technology"><img src={techsierraLogo} alt="techsierra Technology" /></a>
                     
                 </li>
                 <li>

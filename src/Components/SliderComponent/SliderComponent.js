@@ -24,7 +24,7 @@ const SliderComponent = () => {
       <Slider {...settings} className="slider">
         <div className="sliderPara">
           <p>
-            “I was particularly grateful for Scion's responsiveness to all of my
+            “I was particularly grateful for techsierra's responsiveness to all of my
             requests and questions given our time frame…and great customer
             service – responding to my emails within a couple hours if not less.
             [They also] did a great job of listening to my concerns and feedback
@@ -43,7 +43,7 @@ const SliderComponent = () => {
         </div>
         <div className="sliderPara">
           <p>
-            “Scion’s associate has definitely been a great addition to the team.
+            “techsierra’s associate has definitely been a great addition to the team.
             He is very attentive and is picking up the process very quickly. We
             are very grateful to have him here!”
           </p>
@@ -51,20 +51,20 @@ const SliderComponent = () => {
         </div>
         <div className="sliderPara">
           <p>
-            "The great thing about Scion is that everyone there has got
+            "The great thing about techsierra is that everyone there has got
             character. These are legitimately good people, and they know
             staffing. There's nothing worse than giving your resume to some
             cubicle zombie whose life revolves around the toner level of the
             copy machine. You pour your life into that damned resume and you
             want to hand it over to someone who matters in some way, right?
-            Well, Scion's the place. "
+            Well, techsierra's the place. "
           </p>
           <h3>Gary Lugtu, Manager, Phacil, Inc.</h3>
         </div>
         <div className="sliderPara">
           <p>
             “… by far the best temp placement representative we have had the
-            opportunity to work with. [Scion Staffing] plays an active role in
+            opportunity to work with. [techsierra Staffing] plays an active role in
             matching our culture with a temp new hire. All of our employees have
             been extremely pleased with the caliber of candidates…” -
           </p>
@@ -72,7 +72,7 @@ const SliderComponent = () => {
         </div>
         <div className="sliderPara">
           <p>
-            “The folks that Scion sends are always top notch even with the
+            “The folks that techsierra sends are always top notch even with the
             shortest of notice…responsive, attentive to detail, and provides a
             great service.”
           </p>
