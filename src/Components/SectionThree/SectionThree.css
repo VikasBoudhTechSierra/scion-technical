@@ -1,0 +1,43 @@
+.EmpowerCtn {
+    padding: 113px 0 101px 0;
+    background-color: #2f2f2f;
+    font-family: "Lato", sans-serif; 
+}
+
+
+.EmpowerCtn h2 {
+    width: 95%;
+    padding: 0 0 78px 0;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Lato", sans-serif; 
+}
+
+.EmpowerCtn .MainCtn {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.EmpowerCtn .MainCtn li {
+    width: 23%;
+}
+
+.EmpowerCtn .EmpowerTxt {
+    height: 230px;
+    margin-top: 10px;
+    padding: 25px;
+    background-color: #cb722d;
+}
+
+.EmpowerCtn .EmpowerTxt h3 {
+    color: #000;
+    font-weight: 600;
+}
+
+.EmpowerCtn .EmpowerTxt  {
+    color: #444;
+    font-size: 17px;
+    line-height: 27px;
+}

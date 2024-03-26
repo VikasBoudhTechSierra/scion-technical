@@ -1,0 +1,41 @@
+.bannerCtn {
+    padding: 220px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../Assets/Images/ScionBanner.png');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    font-family: "Lato", sans-serif; 
+}
+
+.bannerCtn h1 {
+    color: #e3e3e3;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+.bannerCtn h1::after {
+    content: '';
+    width: 95%;
+    height: 3px;
+    margin: 15px auto;
+    display: block; 
+    background-color: #244143;
+    opacity: 0.8;
+}
+.bannerCtn h2 {
+    width: 55%;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+.bannerCtn h3 {
+    color: #f27c3c;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: bold;
+}

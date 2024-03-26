@@ -1,0 +1,34 @@
+.headerCtn a {
+    padding: 53px 0 13px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.headerCtn header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerCtn header ul a {
+    font-family: "Lato", sans-serif; 
+}
+
+.headerCtn nav ul {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;   
+    justify-content: space-between;
+
+}
+
+.headerCtn nav ul li a {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.headerCtn .scionLogo {
+    width: 249px;
+    padding-right: 2%;
+}
