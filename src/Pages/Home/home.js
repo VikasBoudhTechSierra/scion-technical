@@ -4,6 +4,7 @@ import Banner from "../../Components/Banner/Banner";
 import SectionThree from "../../Components/SectionThree/SectionThree";
 import TextBox from "../../Components/TextBox/TextBox";
 import SliderComponent from "../../Components/SliderComponent/SliderComponent";
+import RecruitingSpecialties from "../../Components/RecruitingSpecialties/RecruitingSpecialties";
 import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
@@ -39,6 +40,7 @@ const Home = () => {
         buttonText={buttonText}
         buttonLink={buttonLink}
       />
+      <RecruitingSpecialties />
       <SliderComponent />
       <Footer/>
     </div>
