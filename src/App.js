@@ -1,14 +1,16 @@
 import React from "react";
-import Header from "./Components/Header/Header";
-import Banner from "./Components/Banner/Banner";
-import SectionThree from "./Components/SectionThree/SectionThree";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home/home";
+import Contact from "./Pages/Contact/contact";
+
 function App() {
   return (
-    <div className="App">
-     <Header />
-     <Banner />
-     <SectionThree />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} exact />
+        <Route path="/" element={<Contact />} exact />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
