@@ -1,0 +1,44 @@
+.textBoxContainer {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  align-items: center;
+  padding: 30px;
+}
+.textBoxContainer .textBoxHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cb722d;
+  font-size: 2.5em;
+  /* align-items: center; */
+  margin-bottom: 30px;
+  text-decoration: underline #cb722d 2px;
+  text-underline-offset: 10px;
+}
+
+.textBoxContainer .textBoxParagraph {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.textBoxContainer .textBoxParagraph .textBoxPara {
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.textBoxContainer .textBoxBtn {
+  color: #cb722d;
+  font-size: 13px;
+  height: 39px;
+  border: 2px solid #cb722d;
+  margin-top: 15px;
+}
+
+.textBoxContainer .textBoxBtn:hover {
+  background-color: #cb722d;
+  color: #ffffff;
+  font-size: 13px;
+  height: 39px;
+}
