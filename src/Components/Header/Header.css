@@ -34,3 +34,21 @@
     width: 249px;
     padding-right: 2%;
 }
+
+.services-subMenu {
+    width: 10rem;
+    position: absolute;
+    text-align: start;
+}
+
+.services-subMenu.clicked {
+    display: none;
+}
+
+.submenu-item:hover {
+    background-color: red;
+}
+
+.nav-item a:hover {
+    background-color: aquamarine;
+}
