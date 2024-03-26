@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
       <div className="footer_bottom_holder">
         <p>
-          © 2024 Scion Staffing, Inc. All rights reserved. Website by Ink
+          © 2024 techsierra Staffing, Inc. All rights reserved. Website by Ink
           Stained Creative
         </p>
       </div>

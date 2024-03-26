@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "./SliderComponent.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const SliderComponent = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  // const [currentSlide, setCurrentSlide] = useState(0);
 
   const settings = {
     dots: true,
     infinite: true,
-    speed: 2000, // Adjust speed as needed
+    speed: 700, // Adjust speed as needed
     autoplay: true,
-    autoplaySpeed: 3000, // Adjust autoplay speed as needed
+    autoplaySpeed: 5000, // Adjust autoplay speed as needed
     slidesToShow: 1,
     slidesToScroll: 1,
-    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
+    // beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
   };
 
   return (
@@ -24,7 +24,7 @@ const SliderComponent = () => {
       <Slider {...settings} className="slider">
         <div className="sliderPara">
           <p>
-            “I was particularly grateful for Scion's responsiveness to all of my
+            “I was particularly grateful for techsierra's responsiveness to all of my
             requests and questions given our time frame…and great customer
             service – responding to my emails within a couple hours if not less.
             [They also] did a great job of listening to my concerns and feedback
@@ -39,11 +39,11 @@ const SliderComponent = () => {
             this place!!!" -- "Amazing Company and Team!" -- "Great Company!" --
             Rating: 4.8 - 14 votes
           </p>
-          <h3></h3>
+          {/* <h3></h3> */}
         </div>
         <div className="sliderPara">
           <p>
-            “Scion’s associate has definitely been a great addition to the team.
+            “techsierra’s associate has definitely been a great addition to the team.
             He is very attentive and is picking up the process very quickly. We
             are very grateful to have him here!”
           </p>
@@ -51,20 +51,20 @@ const SliderComponent = () => {
         </div>
         <div className="sliderPara">
           <p>
-            "The great thing about Scion is that everyone there has got
+            "The great thing about techsierra is that everyone there has got
             character. These are legitimately good people, and they know
             staffing. There's nothing worse than giving your resume to some
             cubicle zombie whose life revolves around the toner level of the
             copy machine. You pour your life into that damned resume and you
             want to hand it over to someone who matters in some way, right?
-            Well, Scion's the place. "
+            Well, techsierra's the place. "
           </p>
           <h3>Gary Lugtu, Manager, Phacil, Inc.</h3>
         </div>
         <div className="sliderPara">
           <p>
             “… by far the best temp placement representative we have had the
-            opportunity to work with. [Scion Staffing] plays an active role in
+            opportunity to work with. [techsierra Staffing] plays an active role in
             matching our culture with a temp new hire. All of our employees have
             been extremely pleased with the caliber of candidates…” -
           </p>
@@ -72,7 +72,7 @@ const SliderComponent = () => {
         </div>
         <div className="sliderPara">
           <p>
-            “The folks that Scion sends are always top notch even with the
+            “The folks that techsierra sends are always top notch even with the
             shortest of notice…responsive, attentive to detail, and provides a
             great service.”
           </p>
@@ -86,22 +86,7 @@ const SliderComponent = () => {
           <h3>HR Director in the Technology Sector</h3>
         </div>
       </Slider>
-      <div style={{ textAlign: "center" }}>
-        {Array.from({ length: 8 }, (_, i) => (
-          <span
-            key={i}
-            onClick={() => setCurrentSlide(i)}
-            style={{
-              cursor: "pointer",
-              margin: "0px",
-              fontSize: "50px", // Adjust font size as needed
-              color: i === currentSlide ? "black" : "white",
-            }}
-          >
-            &#8226; {/* Unicode for a bullet/dot */}
-          </span>
-        ))}
-      </div>
+   
     </div>
   );
 };
