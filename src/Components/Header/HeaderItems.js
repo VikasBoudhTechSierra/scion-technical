@@ -2,10 +2,9 @@ export const NavItems = [
   { id: 1, title: "about us", cName: "nav-item" },
   { id: 2, title: "temporary staffing", cName: "nav-item" },
   { id: 3, title: "permenrnt placement", cName: "nav-item" },
-  { id: 4, title: "executive search", cName: "nav-item" },
-  { id: 6, title: "apply", cName: "nav-item" },
-  { id: 7, title: "hire", cName: "nav-item" },
-  { id: 8, title: "contact", cName: "nav-item" },
+  { id: 4, title: "apply", cName: "nav-item" },
+  { id: 5, title: "hire", cName: "nav-item" },
+  { id: 6, title: "contact", cName: "nav-item" },
 ];
 
 export const aboutUsDrop = [
