@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "./SliderComponent.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const SliderComponent = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  // const [currentSlide, setCurrentSlide] = useState(0);
 
   const settings = {
     dots: true,
     infinite: true,
-    speed: 2000, // Adjust speed as needed
+    speed: 700, // Adjust speed as needed
     autoplay: true,
-    autoplaySpeed: 3000, // Adjust autoplay speed as needed
+    autoplaySpeed: 5000, // Adjust autoplay speed as needed
     slidesToShow: 1,
     slidesToScroll: 1,
-    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
+    // beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
   };
 
   return (
@@ -39,7 +39,7 @@ const SliderComponent = () => {
             this place!!!" -- "Amazing Company and Team!" -- "Great Company!" --
             Rating: 4.8 - 14 votes
           </p>
-          <h3></h3>
+          {/* <h3></h3> */}
         </div>
         <div className="sliderPara">
           <p>
@@ -86,22 +86,7 @@ const SliderComponent = () => {
           <h3>HR Director in the Technology Sector</h3>
         </div>
       </Slider>
-      <div style={{ textAlign: "center" }}>
-        {Array.from({ length: 8 }, (_, i) => (
-          <span
-            key={i}
-            onClick={() => setCurrentSlide(i)}
-            style={{
-              cursor: "pointer",
-              margin: "0px",
-              fontSize: "50px", // Adjust font size as needed
-              color: i === currentSlide ? "black" : "white",
-            }}
-          >
-            &#8226; {/* Unicode for a bullet/dot */}
-          </span>
-        ))}
-      </div>
+   
     </div>
   );
 };

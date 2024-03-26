@@ -9,6 +9,7 @@
     /* background-position: center; */
     background-size: cover;
     font-family: "Lato", sans-serif; 
+    background-attachment: fixed;
 }
 
 .bannerCtn h1 {
