@@ -104,16 +104,7 @@
   position: relative;
 }
 
-.section-main-title::before {
-    border: 8px solid transparent;
-    border-top-color: #000;
-    margin-left: -5px;
-    margin-bottom: -2px;
-}
 
-.section-main-title::after {
-    border-top-color: rgb(246, 246, 246) !important;
-}
 
 .section-main-title::after, .section-main-title::before {
     content: '';
@@ -124,9 +115,19 @@
     border-color: transparent;
     left: 50%;
     position: absolute;
-    bottom: -13px;
+    bottom: -14px;
     margin-left: -4px;
+ }
+
+.section-main-title::before {
+    border: 8px solid transparent;
     border-top-color: #000;
+    margin-left: -5px;
+    margin-bottom: -2px;
+}
+
+.section-main-title::after {
+    border-top-color: rgb(246, 246, 246) !important;
 }
 
 .mission-image {
