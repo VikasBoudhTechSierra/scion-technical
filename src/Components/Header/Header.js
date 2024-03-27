@@ -1,52 +1,250 @@
-import React from "react";
+import React, { useState } from "react";
+import techsierraLogo from "../../Assets/Images/TechSierraBigFadedLogo.png";
+import techsierraSmallLogo from "../../Assets/Images/TechSierraLogo.png";
+
+import {
+  NavItems,
+  aboutUsDrop,
+  applyDrop,
+  hireDrop,
+  permanentPlacement,
+  temporaryStaffingDrop,
+} from "./HeaderItems";
 import "./Header.css";
-import techsierraLogo from "../../Assets/Images/scion-logo.png";
-const header = () => {
-    return (
-        <div className="wrapper headerCtn">
-           <header>
-            <ul>
-                <li>
-                    <div>
-                        <a href="#FIXME" title="Search Jobs">search jobs</a> | <a href="#FIXME" title="Hire Staff" >hire staff</a>
-                    </div>
+
+function AboutUsDown({ closeDropDown, title }) {
+  return (
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
+      {aboutUsDrop.map((item) => (
+        <li key={item.id}>
+          <a href="#fixme" className={item.cName}>
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function TemporaryStaffingDown({ closeDropDown, title }) {
+  return (
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
+      {temporaryStaffingDrop.map((item) => (
+        <li key={item.id}>
+          <a href="#fixme" className={item.cName}>
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function PermenrntPlacementDown({ closeDropDown, title }) {
+  return (
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
+      {permanentPlacement.map((item) => (
+        <li key={item.id}>
+          <a href="#fixme" className={item.cName}>
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function ApplyDown({ closeDropDown, title }) {
+  return (
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
+      {applyDrop.map((item) => (
+        <li key={item.id}>
+          <a href="#fixme" className={item.cName}>
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function HireDown({ closeDropDown, title }) {
+  return (
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
+      {hireDrop.map((item) => (
+        <li key={item.id}>
+          <a href="#fixme" className={item.cName}>
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+const Header = ({ scrollHeight }) => {
+  const [showAboutDropDown, setAboutShowDropDown] = useState(false);
+  const [showTPDropDown, setTPShowDropDown] = useState(false);
+  const [showPermanentPlacement, setShowPermentPlacement] = useState(false);
+  const [showApplyDrop, setShowApplyDrop] = useState(false);
+  const [showHireDrop, setShowHireDrop] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+
+  return (
+    <div
+      className={`wrapper headerCtn ${
+        scrollHeight > 100 ? "sticky-header-show" : "sticky-header-hide"
+      }`}
+      onMouseMoveCapture={() => setShowNav(true)}
+      onMouseLeave={() => setShowNav(false)}
+    >
+      <header>
+        <ul>
+          <li>
+            <div>
+              <a href="#FIXME" title="Search Jobs">
+                search jobs
+              </a>{" "}
+              |{" "}
+              <a href="#FIXME" title="Hire Staff">
+                hire staff
+              </a>
+            </div>
+          </li>
+          <li className="scionLogo">
+            <a href="#FIXME" title="Scion Technology">
+              {scrollHeight > 100 ? (
+                <img src={techsierraSmallLogo} alt="Scion Technology" />
+              ) : (
+                <img src={techsierraLogo} alt="Scion Technology" />
+              )}
+            </a>
+          </li>
+          <li>
+            <a href="tel:+8884878850">call us: (888) 487-8850</a>
+          </li>
+        </ul>
+      </header>
+      <nav
+        className={`${
+          scrollHeight > 100
+            ? `HideNav ${showNav ? "visibleNav" : ""}`
+            : `ShowNav`
+        }`}
+      >
+        <ul className="nav-items">
+          {NavItems.map((item) => {
+            if (item.title === "about us") {
+              return (
+                <li
+                  key={item.id}
+                  className={item.cName}
+                  onMouseMoveCapture={() => setAboutShowDropDown(true)}
+                  onMouseLeave={() => setAboutShowDropDown(false)}
+                >
+                  <a href="#fixme">{item.title}</a>
+                  {showAboutDropDown && (
+                    <AboutUsDown
+                      closeDropDown={setAboutShowDropDown}
+                      title={item.title}
+                    />
+                  )}
                 </li>
-                <li className="techsierraLogo">
-                    <a href="#FIXME" title="techsierra Technology"><img src={techsierraLogo} alt="techsierra Technology" /></a>
-                    
+              );
+            } else if (item.title === "temporary staffing") {
+              return (
+                <li
+                  key={item.id}
+                  className={item.cName}
+                  onMouseMoveCapture={() => setTPShowDropDown(true)}
+                  onMouseLeave={() => setTPShowDropDown(false)}
+                >
+                  <a href="#fixme">{item.title}</a>
+                  {showTPDropDown && (
+                    <TemporaryStaffingDown
+                      closeDropDown={setTPShowDropDown}
+                      title={item.title}
+                    />
+                  )}
                 </li>
-                <li>
-                    <a href="tel:+8884878850">call us: (888) 487-8850</a>
+              );
+            } else if (item.title === "permenrnt placement") {
+              return (
+                <li
+                  key={item.id}
+                  className={item.cName}
+                  onMouseMoveCapture={() => setShowPermentPlacement(true)}
+                  onMouseLeave={() => setShowPermentPlacement(false)}
+                >
+                  <a href="#fixme">{item.title}</a>
+                  {showPermanentPlacement && (
+                    <PermenrntPlacementDown
+                      closeDropDown={setShowPermentPlacement}
+                      title={item.title}
+                    />
+                  )}
                 </li>
-            </ul>
-           </header>
-           <nav>
-            <ul>
-                <li>
-                    <a href="#FIXME" title="About us">about us</a>
+              );
+            } else if (item.title === "apply") {
+              return (
+                <li
+                  key={item.id}
+                  className={item.cName}
+                  onMouseMoveCapture={() => setShowApplyDrop(true)}
+                  onMouseLeave={() => setShowApplyDrop(false)}
+                >
+                  <a href="#fixme">{item.title}</a>
+                  {showApplyDrop && (
+                    <ApplyDown
+                      closeDropDown={setShowApplyDrop}
+                      title={item.title}
+                    />
+                  )}
                 </li>
-                <li>
-                    <a href="#FIXME" title="Temporary staffing">Temporary staffing</a>
+              );
+            } else if (item.title === "hire") {
+              return (
+                <li
+                  key={item.id}
+                  className={item.cName}
+                  onMouseMoveCapture={() => setShowHireDrop(true)}
+                  onMouseLeave={() => setShowHireDrop(false)}
+                >
+                  <a href="#fixme">{item.title}</a>
+                  {showHireDrop && (
+                    <HireDown
+                      closeDropDown={setShowHireDrop}
+                      title={item.title}
+                    />
+                  )}
                 </li>
-                <li>
-                    <a href="#FIXME" title="Permanent Placement">Permanent Placement</a>
-                </li>
-                <li>
-                    <a href="#FIXME" title="Executive Search">Executive Search</a>
-                </li>
-                <li>
-                    <a href="#FIXME" title="Apply">Apply</a>
-                </li>
-                <li>
-                    <a href="#FIXME" title="Hire">Hire</a>
-                </li>
-                <li>
-                    <a href="#FIXME" title="Contact Us">Contact Us</a>
-                </li>
-            </ul>
-           </nav>
-        </div>
-    );
+              );
+            }
+            return (
+              <li key={item.id} className={item.cName}>
+                <a href="#fixme">{item.title}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </div>
+  );
 };
 
-export default header;
+export default Header;

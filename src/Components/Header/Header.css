@@ -1,8 +1,40 @@
-.headerCtn a {
-    padding: 53px 0 13px 0;
+.headerCtn {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.sticky-header-show {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #eef0f1;
+}
+
+.sticky-header-show header {
+    width: 58%;
+    margin: 0 auto;
+}
+
+.sticky-header-hide {
+    position: relative;
+}
+
+.sticky-header-show header>ul {
+    padding: 1% 0;
+}
+
+.headerCtn header a {
     font-size: 13px;
     text-transform: uppercase;
     color: #000;
+}
+
+.headerCtn.sticky-header-hide header ul {
+    padding: 4% 0;
+}
+.headerCtn.sticky-header-show header ul {
+    padding: 1.5% 0;
 }
 
 .headerCtn header ul {
@@ -15,20 +47,98 @@
     font-family: "Lato", sans-serif; 
 }
 
-.headerCtn nav ul {
+
+.headerCtn .ShowNav {
+    display: block;
+}
+
+.headerCtn .HideNav {
+    display: none;
+}
+
+.headerCtn .HideNav.visibleNav {
+    width: 58%;
+    margin: 0 auto;
+    display: block;
+}
+
+.headerCtn nav>ul {
     width: 85%;
+    padding: 1.5% 0;
     margin: 0 auto;
     display: flex;   
     justify-content: space-between;
 
 }
 
-.headerCtn nav ul li a {
-    font-weight: 600;
+.headerCtn nav>ul>li>a {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
-.headerCtn .techsierraLogo {
-    width: 249px;
-    padding-right: 2%;
+.sticky-header-hide .scionLogo>a>img {
+    width: 250px;
+    height:135px;
+    filter: contrast(60%);
+}
+
+.nav-items {
+    position: relative;
+    transition: .3s ease-in-out;
+}
+
+.services-subMenu {
+    padding: 3% 2%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: #2f2f2f;
+    transition: 120s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.services-subMenu.about {
+    left: -10%;
+}
+.services-subMenu.apply {
+    left: 61%;
+}
+.services-subMenu.hire {
+    left: 77%;
+}
+
+.services-subMenu.temporary, 
+.services-subMenu.permenrnt {
+    width: 100%;
+    left: 5%;
+    flex-direction: unset;
+    flex-wrap: wrap;
+}
+
+.services-subMenu.temporary>li,
+.services-subMenu.permenrnt>li {
+    flex-basis: 33.33%;
+}
+
+.services-subMenu li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.services-subMenu li a {
+    color: #666;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+.services-subMenu.clicked {
+    display: none;
+}
+
+.services-subMenu li a:hover {
+    color: #f2f2f2;
 }
