@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import ScionLogo from "../../Assets/Images/scion-logo.png";
+import techsierraLogo from "../../Assets/Images/scion-logo.png";
+
 import {
   NavItems,
   aboutUsDrop,
@@ -72,7 +73,7 @@ const Header = () => {
           </li>
           <li className="scionLogo">
             <a href="#FIXME" title="Scion Technology">
-              <img src={ScionLogo} alt="Scion Technology" />
+              <img src={techsierraLogo} alt="Scion Technology" />
             </a>
           </li>
           <li>
