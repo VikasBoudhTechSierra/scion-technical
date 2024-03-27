@@ -8,7 +8,7 @@ export const NavItems = [
 ];
 
 export const aboutUsDrop = [
-  { id: 1, title: "why we scion", cName: "submenu-item" },
+  { id: 1, title: "why we tech sierra", cName: "submenu-item" },
   { id: 2, title: "our mission & values", cName: "submenu-item" },
   { id: 3, title: "why diversity, equity & inclusion", cName: "submenu-item" },
   { id: 4, title: "our clients", cName: "submenu-item" },
