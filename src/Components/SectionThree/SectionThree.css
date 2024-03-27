@@ -12,6 +12,12 @@
   font-weight: 600;
   text-align: center;
   font-family: "Lato", sans-serif;
+  
+}
+
+.EmpowerCtn h2::selection {
+  color: white;
+  background-color: #cb722d;
 }
 
 .EmpowerCtn .MainCtn {
