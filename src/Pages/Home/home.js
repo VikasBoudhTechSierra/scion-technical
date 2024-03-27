@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../../Components/Header/Header";
 import Banner from "../../Components/Banner/Banner";
 import SectionThree from "../../Components/SectionThree/SectionThree";
@@ -11,7 +11,6 @@ import startaSearch from "../../Assets/Images/Homepage/home-tech-whychoose.jpg";
 import techSearch from "../../Assets/Images/Homepage/launchYourTechSearch.jpg";
 
 const Home = () => {
-  const [scrollHeigth, setScrollHeight] = useState(0);
   const heading = ["Our Proven History + Best of Staffing Since 2006"];
   const headingTwo = ["Why Choose Our IT Staffing Agency"];
   const headingThree = ["Powerful Tech Talent Connections"];
@@ -54,23 +53,9 @@ const Home = () => {
   const buttonTextThree = ["LAUNCH YOUR TECH SEARCH"];
   const buttonLink = "/";
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollHeight = window.scrollY;
-      setScrollHeight(scrollHeight);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div>
-      <Header scrollHeight={scrollHeigth} />
+      <Header />
       <Banner />
       <SectionThree />
       <TextBox

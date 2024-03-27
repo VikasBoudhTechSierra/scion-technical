@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/contact-us" element={<Contact />} exact />
-        <Route path="/" element={<About />} exact />
+        <Route path="/about-us" element={<About />} exact />
       </Routes>
     </BrowserRouter>
   );
