@@ -1,4 +1,4 @@
-.headerCtn a {
+.headerCtn header a {
     /* padding: 53px 0 13px 0; */
     font-size: 13px;
     text-transform: uppercase;
@@ -16,7 +16,7 @@
     font-family: "Lato", sans-serif; 
 }
 
-.headerCtn nav ul {
+.headerCtn nav>ul {
     width: 85%;
     padding: 1.5% 0;
     margin: 0 auto;
@@ -25,7 +25,10 @@
 
 }
 
-.headerCtn nav ul li a {
+.headerCtn nav>ul>li>a {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -35,20 +38,59 @@
     padding-right: 2%;
 }
 
+.nav-items {
+    position: relative;
+    transition: .3s ease-in-out;
+}
+
 .services-subMenu {
-    width: 10rem;
+    padding: 3% 2%;
     position: absolute;
-    text-align: start;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: #2f2f2f;
+    transition: 120s ease-in-out;
+}
+
+.services-subMenu.about {
+    left: -10%;
+}
+.services-subMenu.apply {
+    left: 61%;
+}
+.services-subMenu.hire {
+    left: 77%;
+}
+
+.services-subMenu.temporary, 
+.services-subMenu.permenrnt {
+    width: 100%;
+    left: 5%;
+    flex-direction: unset;
+    flex-wrap: wrap;
+}
+
+.services-subMenu.temporary>li,
+.services-subMenu.permenrnt>li {
+    flex-basis: 33.33%;
+}
+
+.services-subMenu li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.services-subMenu li a {
+    color: #666;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
 }
 
 .services-subMenu.clicked {
     display: none;
 }
 
-.submenu-item:hover {
-    background-color: red;
-}
-
-.nav-item a:hover {
-    background-color: aquamarine;
+.services-subMenu li a:hover {
+    color: #f2f2f2;
 }

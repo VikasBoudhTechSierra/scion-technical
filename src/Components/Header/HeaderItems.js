@@ -46,3 +46,13 @@ export const permanentPlacement = [
   { id: 14, title: "creative & marketing", cName: "submenu-item" },
   { id: 15, title: "professional services", cName: "submenu-item" },
 ];
+
+export const applyDrop = [
+  { id: 1, title: "how to apply", cName: "submenu-item" },
+  { id: 2, title: "search it jobs", cName: "submenu-item" },
+  { id: 3, title: "it job interview tips", cName: "submenu-item" },
+  { id: 4, title: "positions we recruit", cName: "submenu-item" },
+  { id: 5, title: "accounts", cName: "submenu-item" },
+];
+
+export const hireDrop = [{ id: 1, title: "hire staff", cName: "submenu-item" }];

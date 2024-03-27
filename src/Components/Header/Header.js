@@ -4,14 +4,19 @@ import techsierraLogo from "../../Assets/Images/scion-logo.png";
 import {
   NavItems,
   aboutUsDrop,
+  applyDrop,
+  hireDrop,
   permanentPlacement,
   temporaryStaffingDrop,
 } from "./HeaderItems";
 import "./Header.css";
 
-function AboutUsDown({ closeDropDown }) {
+function AboutUsDown({ closeDropDown, title }) {
   return (
-    <ul className="services-subMenu" onMouseLeave={() => closeDropDown(false)}>
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
       {aboutUsDrop.map((item) => (
         <li key={item.id}>
           <a href="#fixme" className={item.cName}>
@@ -23,9 +28,12 @@ function AboutUsDown({ closeDropDown }) {
   );
 }
 
-function TemporaryStaffingDown({ closeDropDown }) {
+function TemporaryStaffingDown({ closeDropDown, title }) {
   return (
-    <ul className="services-subMenu" onMouseLeave={() => closeDropDown(false)}>
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
       {temporaryStaffingDrop.map((item) => (
         <li key={item.id}>
           <a href="#fixme" className={item.cName}>
@@ -37,10 +45,47 @@ function TemporaryStaffingDown({ closeDropDown }) {
   );
 }
 
-function PermenrntPlacementDown({ closeDropDown }) {
+function PermenrntPlacementDown({ closeDropDown, title }) {
   return (
-    <ul className="services-subMenu" onMouseLeave={() => closeDropDown(false)}>
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
       {permanentPlacement.map((item) => (
+        <li key={item.id}>
+          <a href="#fixme" className={item.cName}>
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function ApplyDown({ closeDropDown, title }) {
+  return (
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
+      {applyDrop.map((item) => (
+        <li key={item.id}>
+          <a href="#fixme" className={item.cName}>
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function HireDown({ closeDropDown, title }) {
+  return (
+    <ul
+      className={`services-subMenu ${title}`}
+      onMouseLeave={() => closeDropDown(false)}
+    >
+      {hireDrop.map((item) => (
         <li key={item.id}>
           <a href="#fixme" className={item.cName}>
             {item.title}
@@ -55,6 +100,8 @@ const Header = () => {
   const [showAboutDropDown, setAboutShowDropDown] = useState(false);
   const [showTPDropDown, setTPShowDropDown] = useState(false);
   const [showPermanentPlacement, setShowPermentPlacement] = useState(false);
+  const [showApplyDrop, setShowApplyDrop] = useState(false);
+  const [showHireDrop, setShowHireDrop] = useState(false);
 
   return (
     <div className="wrapper headerCtn">
@@ -94,7 +141,10 @@ const Header = () => {
                 >
                   <a href="#fixme">{item.title}</a>
                   {showAboutDropDown && (
-                    <AboutUsDown closeDropDown={setAboutShowDropDown} />
+                    <AboutUsDown
+                      closeDropDown={setAboutShowDropDown}
+                      title={item.title}
+                    />
                   )}
                 </li>
               );
@@ -108,7 +158,10 @@ const Header = () => {
                 >
                   <a href="#fixme">{item.title}</a>
                   {showTPDropDown && (
-                    <TemporaryStaffingDown closeDropDown={setTPShowDropDown} />
+                    <TemporaryStaffingDown
+                      closeDropDown={setTPShowDropDown}
+                      title={item.title}
+                    />
                   )}
                 </li>
               );
@@ -124,6 +177,41 @@ const Header = () => {
                   {showPermanentPlacement && (
                     <PermenrntPlacementDown
                       closeDropDown={setShowPermentPlacement}
+                      title={item.title}
+                    />
+                  )}
+                </li>
+              );
+            } else if (item.title === "apply") {
+              return (
+                <li
+                  key={item.id}
+                  className={item.cName}
+                  onMouseMoveCapture={() => setShowApplyDrop(true)}
+                  onMouseLeave={() => setShowApplyDrop(false)}
+                >
+                  <a href="#fixme">{item.title}</a>
+                  {showApplyDrop && (
+                    <ApplyDown
+                      closeDropDown={setShowApplyDrop}
+                      title={item.title}
+                    />
+                  )}
+                </li>
+              );
+            } else if (item.title === "hire") {
+              return (
+                <li
+                  key={item.id}
+                  className={item.cName}
+                  onMouseMoveCapture={() => setShowHireDrop(true)}
+                  onMouseLeave={() => setShowHireDrop(false)}
+                >
+                  <a href="#fixme">{item.title}</a>
+                  {showHireDrop && (
+                    <HireDown
+                      closeDropDown={setShowHireDrop}
+                      title={item.title}
                     />
                   )}
                 </li>
