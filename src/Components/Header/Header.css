@@ -33,9 +33,9 @@
     letter-spacing: 1px;
 }
 
-.headerCtn .techsierraLogo {
+.headerCtn .scionLogo>a>img {
     width: 249px;
-    padding-right: 2%;
+    filter: contrast(60%);
 }
 
 .nav-items {

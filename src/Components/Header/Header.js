@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import techsierraLogo from "../../Assets/Images/scion-logo.png";
+import techsierraLogo from "../../Assets/Images/TechSierraBigFadedLogo.png";
 
 import {
   NavItems,
