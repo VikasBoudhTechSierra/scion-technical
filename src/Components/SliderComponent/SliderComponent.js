@@ -24,8 +24,8 @@ const SliderComponent = () => {
       <Slider {...settings} className="slider">
         <div className="sliderPara">
           <p>
-            “I was particularly grateful for techsierra's responsiveness to all of my
-            requests and questions given our time frame…and great customer
+            “I was particularly grateful for Tech Sierra's responsiveness to all
+            of my requests and questions given our time frame…and great customer
             service – responding to my emails within a couple hours if not less.
             [They also] did a great job of listening to my concerns and feedback
             and responding with understanding before either providing
@@ -43,36 +43,37 @@ const SliderComponent = () => {
         </div>
         <div className="sliderPara">
           <p>
-            “techsierra’s associate has definitely been a great addition to the team.
-            He is very attentive and is picking up the process very quickly. We
-            are very grateful to have him here!”
+            “Tech Sierra’s associate has definitely been a great addition to the
+            team. He is very attentive and is picking up the process very
+            quickly. We are very grateful to have him here!”
           </p>
           <h3>Executive Client</h3>
         </div>
         <div className="sliderPara">
           <p>
-            "The great thing about techsierra is that everyone there has got
+            "The great thing about Tech Sierra is that everyone there has got
             character. These are legitimately good people, and they know
             staffing. There's nothing worse than giving your resume to some
             cubicle zombie whose life revolves around the toner level of the
             copy machine. You pour your life into that damned resume and you
             want to hand it over to someone who matters in some way, right?
-            Well, techsierra's the place. "
+            Well, Tech Sierra's the place. "
           </p>
           <h3>Gary Lugtu, Manager, Phacil, Inc.</h3>
         </div>
         <div className="sliderPara">
           <p>
             “… by far the best temp placement representative we have had the
-            opportunity to work with. [techsierra Staffing] plays an active role in
-            matching our culture with a temp new hire. All of our employees have
-            been extremely pleased with the caliber of candidates…” -
+            opportunity to work with. [Tech Sierra Staffing] plays an active
+            role in matching our culture with a temp new hire. All of our
+            employees have been extremely pleased with the caliber of
+            candidates…” -
           </p>
           <h3>Management Professional in Mid-Size Architecture Firm</h3>
         </div>
         <div className="sliderPara">
           <p>
-            “The folks that techsierra sends are always top notch even with the
+            “The folks that Tech Sierra sends are always top notch even with the
             shortest of notice…responsive, attentive to detail, and provides a
             great service.”
           </p>
@@ -86,7 +87,6 @@ const SliderComponent = () => {
           <h3>HR Director in the Technology Sector</h3>
         </div>
       </Slider>
-   
     </div>
   );
 };

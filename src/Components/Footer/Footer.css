@@ -22,22 +22,22 @@
   font-weight: 500;
 }
 
-.top-wrapper .middle-div  .sitemap {
-    margin-top: 20px;
+.top-wrapper .middle-div .sitemap {
+  margin-top: 20px;
 }
 
 .social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: #cb722d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #06a9ca;
 }
 
 .social-icons div {
-    border: 3px solid #cb722d;
-    border-radius: 50%;
-    padding: 15px;
-    margin: 0 12px;
+  border: 3px solid #06a9ca;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 0 12px;
 }
 
 .top-wrapper .right-div {
