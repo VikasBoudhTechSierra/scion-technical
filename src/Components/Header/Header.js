@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import techsierraLogo from "../../Assets/Images/TechSierraBigFadedLogo.png";
 import techsierraSmallLogo from "../../Assets/Images/TechSierraLogo.png";
 
@@ -11,6 +11,7 @@ import {
   temporaryStaffingDrop,
 } from "./HeaderItems";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function AboutUsDown({ closeDropDown, title }) {
   return (
@@ -20,9 +21,9 @@ function AboutUsDown({ closeDropDown, title }) {
     >
       {aboutUsDrop.map((item) => (
         <li key={item.id}>
-          <a href="#fixme" className={item.cName}>
+          <Link to={item.path} className={item.cName}>
             {item.title}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
@@ -97,7 +98,8 @@ function HireDown({ closeDropDown, title }) {
   );
 }
 
-const Header = ({ scrollHeight }) => {
+const Header = () => {
+  const [scrollHeigth, setScrollHeight] = useState(0);
   const [showAboutDropDown, setAboutShowDropDown] = useState(false);
   const [showTPDropDown, setTPShowDropDown] = useState(false);
   const [showPermanentPlacement, setShowPermentPlacement] = useState(false);
@@ -105,10 +107,24 @@ const Header = ({ scrollHeight }) => {
   const [showHireDrop, setShowHireDrop] = useState(false);
   const [showNav, setShowNav] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = window.scrollY;
+      setScrollHeight(scrollHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div
       className={`wrapper headerCtn ${
-        scrollHeight > 100 ? "sticky-header-show" : "sticky-header-hide"
+        scrollHeigth > 100 ? "sticky-header-show" : "sticky-header-hide"
       }`}
       onMouseMoveCapture={() => setShowNav(true)}
       onMouseLeave={() => setShowNav(false)}
@@ -128,7 +144,7 @@ const Header = ({ scrollHeight }) => {
           </li>
           <li className="scionLogo">
             <a href="#FIXME" title="Scion Technology">
-              {scrollHeight > 100 ? (
+              {scrollHeigth > 100 ? (
                 <img src={techsierraSmallLogo} alt="Scion Technology" />
               ) : (
                 <img src={techsierraLogo} alt="Scion Technology" />
@@ -142,7 +158,7 @@ const Header = ({ scrollHeight }) => {
       </header>
       <nav
         className={`${
-          scrollHeight > 100
+          scrollHeigth > 100
             ? `HideNav ${showNav ? "visibleNav" : ""}`
             : `ShowNav`
         }`}
@@ -157,7 +173,7 @@ const Header = ({ scrollHeight }) => {
                   onMouseMoveCapture={() => setAboutShowDropDown(true)}
                   onMouseLeave={() => setAboutShowDropDown(false)}
                 >
-                  <a href="#fixme">{item.title}</a>
+                  <a href="#FIXME">{item.title}</a>
                   {showAboutDropDown && (
                     <AboutUsDown
                       closeDropDown={setAboutShowDropDown}
@@ -174,7 +190,7 @@ const Header = ({ scrollHeight }) => {
                   onMouseMoveCapture={() => setTPShowDropDown(true)}
                   onMouseLeave={() => setTPShowDropDown(false)}
                 >
-                  <a href="#fixme">{item.title}</a>
+                  <a href="#FIXME">{item.title}</a>
                   {showTPDropDown && (
                     <TemporaryStaffingDown
                       closeDropDown={setTPShowDropDown}
@@ -191,7 +207,7 @@ const Header = ({ scrollHeight }) => {
                   onMouseMoveCapture={() => setShowPermentPlacement(true)}
                   onMouseLeave={() => setShowPermentPlacement(false)}
                 >
-                  <a href="#fixme">{item.title}</a>
+                  <a href="#FIXME">{item.title}</a>
                   {showPermanentPlacement && (
                     <PermenrntPlacementDown
                       closeDropDown={setShowPermentPlacement}
@@ -208,7 +224,7 @@ const Header = ({ scrollHeight }) => {
                   onMouseMoveCapture={() => setShowApplyDrop(true)}
                   onMouseLeave={() => setShowApplyDrop(false)}
                 >
-                  <a href="#fixme">{item.title}</a>
+                  <a href="#FIXME">{item.title}</a>
                   {showApplyDrop && (
                     <ApplyDown
                       closeDropDown={setShowApplyDrop}
@@ -225,7 +241,7 @@ const Header = ({ scrollHeight }) => {
                   onMouseMoveCapture={() => setShowHireDrop(true)}
                   onMouseLeave={() => setShowHireDrop(false)}
                 >
-                  <a href="#fixme">{item.title}</a>
+                  <a href="#FIXME">{item.title}</a>
                   {showHireDrop && (
                     <HireDown
                       closeDropDown={setShowHireDrop}
@@ -237,7 +253,7 @@ const Header = ({ scrollHeight }) => {
             }
             return (
               <li key={item.id} className={item.cName}>
-                <a href="#fixme">{item.title}</a>
+                <a href="#FIXME">{item.title}</a>
               </li>
             );
           })}
