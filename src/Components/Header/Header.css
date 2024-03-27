@@ -1,12 +1,43 @@
+.headerCtn {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.sticky-header-show {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #eef0f1;
+}
+
+.sticky-header-show header {
+    width: 58%;
+    margin: 0 auto;
+}
+
+.sticky-header-hide {
+    position: relative;
+}
+
+.sticky-header-show header>ul {
+    padding: 1% 0;
+}
+
 .headerCtn header a {
-    /* padding: 53px 0 13px 0; */
     font-size: 13px;
     text-transform: uppercase;
     color: #000;
 }
 
+.headerCtn.sticky-header-hide header ul {
+    padding: 4% 0;
+}
+.headerCtn.sticky-header-show header ul {
+    padding: 1.5% 0;
+}
+
 .headerCtn header ul {
-    padding: 4.5% 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +45,21 @@
 
 .headerCtn header ul a {
     font-family: "Lato", sans-serif; 
+}
+
+
+.headerCtn .ShowNav {
+    display: block;
+}
+
+.headerCtn .HideNav {
+    display: none;
+}
+
+.headerCtn .HideNav.visibleNav {
+    width: 58%;
+    margin: 0 auto;
+    display: block;
 }
 
 .headerCtn nav>ul {
@@ -33,8 +79,9 @@
     letter-spacing: 1px;
 }
 
-.headerCtn .scionLogo>a>img {
-    width: 249px;
+.sticky-header-hide .scionLogo>a>img {
+    width: 250px;
+    height:135px;
     filter: contrast(60%);
 }
 
@@ -51,6 +98,7 @@
     z-index: 1;
     background-color: #2f2f2f;
     transition: 120s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .services-subMenu.about {

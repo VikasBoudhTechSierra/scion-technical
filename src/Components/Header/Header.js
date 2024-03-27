@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import techsierraLogo from "../../Assets/Images/TechSierraBigFadedLogo.png";
+import techsierraSmallLogo from "../../Assets/Images/TechSierraLogo.png";
 
 import {
   NavItems,
@@ -96,15 +97,22 @@ function HireDown({ closeDropDown, title }) {
   );
 }
 
-const Header = () => {
+const Header = ({ scrollHeight }) => {
   const [showAboutDropDown, setAboutShowDropDown] = useState(false);
   const [showTPDropDown, setTPShowDropDown] = useState(false);
   const [showPermanentPlacement, setShowPermentPlacement] = useState(false);
   const [showApplyDrop, setShowApplyDrop] = useState(false);
   const [showHireDrop, setShowHireDrop] = useState(false);
+  const [showNav, setShowNav] = useState(false);
 
   return (
-    <div className="wrapper headerCtn">
+    <div
+      className={`wrapper headerCtn ${
+        scrollHeight > 100 ? "sticky-header-show" : "sticky-header-hide"
+      }`}
+      onMouseMoveCapture={() => setShowNav(true)}
+      onMouseLeave={() => setShowNav(false)}
+    >
       <header>
         <ul>
           <li>
@@ -120,7 +128,11 @@ const Header = () => {
           </li>
           <li className="scionLogo">
             <a href="#FIXME" title="Scion Technology">
-              <img src={techsierraLogo} alt="Scion Technology" />
+              {scrollHeight > 100 ? (
+                <img src={techsierraSmallLogo} alt="Scion Technology" />
+              ) : (
+                <img src={techsierraLogo} alt="Scion Technology" />
+              )}
             </a>
           </li>
           <li>
@@ -128,7 +140,13 @@ const Header = () => {
           </li>
         </ul>
       </header>
-      <nav>
+      <nav
+        className={`${
+          scrollHeight > 100
+            ? `HideNav ${showNav ? "visibleNav" : ""}`
+            : `ShowNav`
+        }`}
+      >
         <ul className="nav-items">
           {NavItems.map((item) => {
             if (item.title === "about us") {
