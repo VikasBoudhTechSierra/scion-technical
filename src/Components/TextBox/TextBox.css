@@ -5,17 +5,16 @@
   margin: 0 auto;
   /* align-items: center; */
   /* overflow: hidden; */
-
 }
 .textBoxContainer .textBoxHeading {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #cb722d;
+  color: #06a9ca;
   font-size: 2.5em;
   /* align-items: center; */
   padding: 30px 0 40px 0;
-  text-decoration: underline #cb722d 2px;
+  text-decoration: underline #06a9ca 2px;
   text-underline-offset: 10px;
   text-align: center;
 }
@@ -23,8 +22,7 @@
 .textBoxContainer .textBoxParagraph {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.textMain{
- 
+.textMain {
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -36,16 +34,17 @@
 }
 
 .textBoxContainer .textBoxBtn {
-  color: #cb722d;
+  color: #06a9ca;
   font-size: 13px;
   height: 39px;
-  border: 2px solid #cb722d;
+  border: 2px solid #06a9ca;
   margin-top: 15px;
 }
 
 .textBoxContainer .textBoxBtn:hover {
-  background-color: #cb722d;
+  background-color: #06a9ca;
   color: #ffffff;
+  transition: 0.5s;
   font-size: 13px;
   height: 39px;
 }

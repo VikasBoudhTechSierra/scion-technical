@@ -33,13 +33,13 @@ const Footer = () => {
             <br />
             <div className="social-icons">
               <div>
-                <BiLogoLinkedin size={30}/>{" "}
+                <BiLogoLinkedin size={30} />{" "}
               </div>
               <div>
-                <BsTwitter size={30}/>{" "}
+                <BsTwitter size={30} />{" "}
               </div>
               <div>
-                <BiLogoFacebook size={30}/>{" "}
+                <BiLogoFacebook size={30} />{" "}
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
       <div className="footer_bottom_holder">
         <p>
-          © 2024 techsierra Staffing, Inc. All rights reserved. Website by Ink
+          © 2024 Tech Sierra Staffing, Inc. All rights reserved. Website by Ink
           Stained Creative
         </p>
       </div>
