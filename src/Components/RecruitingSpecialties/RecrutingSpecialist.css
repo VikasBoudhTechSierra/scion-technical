@@ -1,229 +1,202 @@
 .recruting_specialist {
-    background: #2f2f2f !important;
-    padding-bottom: 3%;
-
+  background: #2f2f2f !important;
+  padding-bottom: 3%;
 }
 
 .wrapper .recruiting_header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper .recruiting_header h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    letter-spacing: 0;
-    text-transform: none;
-    color: #ffffff;
-    border-bottom: 1px solid #fff;
-    text-align: center;
-    margin: 8% 0 8%;
-
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #ffffff;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  margin: 8% 0 8%;
 }
 
 .wrapper .recruiter_card {
-    display: flex;
-    justify-content: space-evenly;
-    gap:22px;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 22px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .wrapper .recruiter_card .main_card {
-    width: 31%;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    
+  width: 31%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .recruiter_card .main_card .card_header {
-    padding: 5% 6% 1% 6%;
-    background: #cb722d !important;
-    transition-duration: .3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  padding: 5% 6% 1% 6%;
+  background: #06a9ca !important;
+  transition-duration: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_card .card_header .icon_section {
-
-    background: #fff;
-    width: 65px;
-    height: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-
+  background: #fff;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
-.main_card .card_header .icon_section span{
-    font-size: 300%;
-    color: #cb722d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main_card .card_header .icon_section span {
+  font-size: 300%;
+  color: #06a9ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Hover EFfect */
 
-.recruiter_card .main_card .card_header:hover{
-    background: #f98436 !important;
+.recruiter_card .main_card .card_header:hover {
+  background: #0596b4 !important;
 }
 
 .recruiter_card .main_card .card_header:hover .icon_section span {
-    color: #f98436;
+  color: #0596b4;
 }
 
-.main_card .card_header .text_header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.main_card .card_header .text_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.main_card .card_header .text_header h4{
-    font-size: 22px;
-    line-height: 33px;
-    color: #ffffff;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.main_card .card_footer{
-    padding: 5% 4%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.main_card .card_header .text_header h4 {
+  font-size: 22px;
+  line-height: 33px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.main_card .card_footer p{
+.main_card .card_footer {
+  padding: 5% 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    color: #444;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    text-align: center;
-    width: 100%;
-
+.main_card .card_footer p {
+  color: #444;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 1810px) {
+  .recruiter_card .main_card .card_header {
+    padding: 5% 0% 1% 0%;
+  }
 
-    .recruiter_card .main_card .card_header {
-        padding: 5% 0% 1% 0%;
-    }
+  .main_card .card_footer p {
+    font-size: 16px;
+  }
 
-    .main_card .card_footer p{
-        font-size: 16px;
-    }
-
-    .main_card .card_footer{
-        padding: 5% 1%;
-    }
-
+  .main_card .card_footer {
+    padding: 5% 1%;
+  }
 }
 @media screen and (max-width: 1610px) {
-
-    .main_card .card_header .text_header h4{
-        font-size: 20px;
-    }
+  .main_card .card_header .text_header h4 {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 1500px) {
-    
-    .main_card .card_footer p{
-        font-size: 15px;
-    }
+  .main_card .card_footer p {
+    font-size: 15px;
+  }
 
-    .main_card .card_header .text_header h4{
-        font-size: 18px;
-    }
-    
+  .main_card .card_header .text_header h4 {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
-    
-    .main_card .card_footer p{
-        font-size: 13px;
-    }
+  .main_card .card_footer p {
+    font-size: 13px;
+  }
 
-    .main_card .card_header .text_header h4{
-        font-size: 18px;
-    }
-    
+  .main_card .card_header .text_header h4 {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 1310px) {
-    
-    .main_card .card_footer p{
-        font-size: 12px;
-    }
+  .main_card .card_footer p {
+    font-size: 12px;
+  }
 
-    .main_card .card_header .text_header h4{
-        font-size: 16px;
-    }
-    
+  .main_card .card_header .text_header h4 {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1170px) {
-    
-    .main_card .card_footer p{
-        font-size: 12px;
-    }
+  .main_card .card_footer p {
+    font-size: 12px;
+  }
 
-    .main_card .card_header .text_header h4{
-        font-size: 14px;
-    }
-    
+  .main_card .card_header .text_header h4 {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
-    
-    .wrapper .recruiter_card {
-        gap: 18px;
-    }
+  .wrapper .recruiter_card {
+    gap: 18px;
+  }
 
-    .main_card .card_footer p{
-        font-size: 10px;
-    }
+  .main_card .card_footer p {
+    font-size: 10px;
+  }
 
-    .main_card .card_header .text_header h4{
-        font-size: 13px;
-    }
+  .main_card .card_header .text_header h4 {
+    font-size: 13px;
+  }
 
-    .main_card .card_header .icon_section span{
-        font-size: 250%;
-    }
-
-    
+  .main_card .card_header .icon_section span {
+    font-size: 250%;
+  }
 }
 
 @media screen and (max-width: 950px) {
-    
-    .wrapper .recruiter_card {
-        gap: 16px;
-    }
+  .wrapper .recruiter_card {
+    gap: 16px;
+  }
 
-    .main_card .card_footer p{
-        font-size: 8px;
-    }
+  .main_card .card_footer p {
+    font-size: 8px;
+  }
 
-    .main_card .card_header .text_header h4{
-        font-size: 10px;
-    }
+  .main_card .card_header .text_header h4 {
+    font-size: 10px;
+  }
 
-    .main_card .card_header .icon_section span{
-        font-size: 175%;
-    }
+  .main_card .card_header .icon_section span {
+    font-size: 175%;
+  }
 
-    .main_card .card_header .icon_section{
-        height: 50px;
-        width: 50px;
-    }
-    
+  .main_card .card_header .icon_section {
+    height: 50px;
+    width: 50px;
+  }
 }
