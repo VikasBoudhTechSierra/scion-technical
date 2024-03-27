@@ -1,0 +1,162 @@
+.mission-values-container {
+  padding-bottom: 52px;
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  padding: 81px 0px 32px 0px;
+  color: #06a9ca;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.25em;
+  text-align: center;
+}
+.mission-statement-ctn {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.mission-statement {
+  width: 95%;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 20px 0;
+
+  font-size: 20px;
+
+  text-align: center;
+}
+.mission-values-main {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission-values-main > div {
+  flex-basis: 48%;
+}
+.mission-values-main div:last-child {
+  flex-basis: 50%;
+}
+.subsection-title {
+  color: #000;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.subsection-content {
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.value-section {
+  margin-bottom: 30px;
+}
+
+.value-title {
+  color: #333;
+  font-size: 16px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.value-description {
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 0;
+}
+
+.button-container {
+  margin-top: 30px;
+  padding: 15px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../../../Assets//Images//AbouUsPage/sidebar-cta-600x125-about2.jpg");
+}
+
+.primary-button {
+  width: 45%;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 26px;
+}
+
+.employer_cta_button {
+  background-color: #fff;
+  color: #000;
+  padding: 8px;
+  margin-bottom: 5px !important;
+  border: 2px solid #000;
+
+  font-size: 17px;
+  text-align: center;
+}
+.section-main-title {
+  font-size: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+.section-main-title::before {
+    border: 8px solid transparent;
+    border-top-color: #000;
+    margin-left: -5px;
+    margin-bottom: -2px;
+}
+
+.section-main-title::after {
+    border-top-color: rgb(246, 246, 246) !important;
+}
+
+.section-main-title::after, .section-main-title::before {
+    content: '';
+    display: block;
+    border: 7px solid #000;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    left: 50%;
+    position: absolute;
+    bottom: -13px;
+    margin-left: -4px;
+    border-top-color: #000;
+}
+
+.mission-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px auto 0;
+}
+.mission-section-btm-container {
+  margin: 130px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mission-section-btm-links {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.mission-section-btm-links li a {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  font-size: 20px;
+  padding: 0;
+  text-align: center;
+  color: #06a9ca;
+  text-transform: uppercase;
+}

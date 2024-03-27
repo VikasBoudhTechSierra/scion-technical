@@ -182,7 +182,7 @@ sub {
 body {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  background-color: #eef0f1;
+  background-color: #ffffff;
   overflow: hidden;
 }
 
