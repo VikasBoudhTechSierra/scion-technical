@@ -11,6 +11,7 @@ import {
   temporaryStaffingDrop,
 } from "./HeaderItems";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function AboutUsDown({ closeDropDown, title }) {
   return (
@@ -20,9 +21,9 @@ function AboutUsDown({ closeDropDown, title }) {
     >
       {aboutUsDrop.map((item) => (
         <li key={item.id}>
-          <a href="#fixme" className={item.cName}>
+          <Link to={item.path} className={item.cName}>
             {item.title}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

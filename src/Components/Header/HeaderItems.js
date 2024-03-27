@@ -8,11 +8,36 @@ export const NavItems = [
 ];
 
 export const aboutUsDrop = [
-  { id: 1, title: "why we tech sierra", cName: "submenu-item" },
-  { id: 2, title: "our mission & values", cName: "submenu-item" },
-  { id: 3, title: "why diversity, equity & inclusion", cName: "submenu-item" },
-  { id: 4, title: "our clients", cName: "submenu-item" },
-  { id: 5, title: "blog insights", cName: "submenu-item" },
+  {
+    id: 1,
+    title: "why we tech sierra",
+    cName: "submenu-item",
+    path: "/about-us/why-tech",
+  },
+  {
+    id: 2,
+    title: "our mission & values",
+    cName: "submenu-item",
+    path: "/about-us/our-mission-value",
+  },
+  {
+    id: 3,
+    title: "why diversity, equity & inclusion",
+    cName: "submenu-item",
+    path: "/about-us/why-diversity",
+  },
+  {
+    id: 4,
+    title: "our clients",
+    cName: "submenu-item",
+    path: "/about-us/our-clients",
+  },
+  {
+    id: 5,
+    title: "blog insights",
+    cName: "submenu-item",
+    path: "/about-us/blog-insight",
+  },
 ];
 
 export const temporaryStaffingDrop = [
