@@ -32,12 +32,12 @@ export const blogContent = [
   {
     id: 4,
     imgSource: "https://placehold.co/349x200",
-    content: "The Top Tech Roles for 2024",
+    content: "Tech Staffing Trends to Watch for in 2024",
   },
   {
     id: 5,
     imgSource: "https://placehold.co/349x200",
-    content: "Building Strong Tech Teams",
+    content: "Where to find the best Help Desk Jobs",
   },
   {
     id: 6,
@@ -87,17 +87,17 @@ export const blogContent = [
   {
     id: 15,
     imgSource: "https://placehold.co/349x200",
-    content: "Best Tools for Graphic Designers",
+    content: "The 5 Fastest Growing Careers in Tech for 2022",
   },
   {
     id: 16,
     imgSource: "https://placehold.co/349x200",
-    content: "Are EdTech Careers Still on The Rise?",
+    content: "Benefits of Working With a Tech Startup",
   },
   {
     id: 17,
     imgSource: "https://placehold.co/349x200",
-    content: "Top 5 In-Demand IT Roles for 2023",
+    content: "Where to find the best Help Desk Jobs",
   },
   {
     id: 18,
@@ -137,12 +137,12 @@ export const blogContent = [
   {
     id: 25,
     imgSource: "https://placehold.co/349x200",
-    content: "Are EdTech Careers Still on The Rise?",
+    content: "Benefits of Working With a Tech Startup",
   },
   {
     id: 26,
     imgSource: "https://placehold.co/349x200",
-    content: "Top 5 In-Demand IT Roles for 2023",
+    content: "Where to find the best Help Desk Jobs",
   },
   {
     id: 27,
