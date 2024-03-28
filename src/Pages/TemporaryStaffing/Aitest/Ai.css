@@ -1,0 +1,23 @@
+.ai-btm-ctn .button-container{
+    display: none;
+}
+
+.ai-job-list li {
+    line-height: 1.5;
+    padding-left: 5%;
+    display: block;
+}
+
+.ai-btm-ctn .itLeftContainer>p{
+    padding-bottom: 0 !important;
+}
+
+.ai-btm-para {
+    color: #444;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.ai-ctn .button-container .primary-button {
+    width: 30%;
+}

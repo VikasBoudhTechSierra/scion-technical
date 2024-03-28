@@ -9,7 +9,8 @@ import WhyDiversity from "./Pages/About/WhyDiversity/WhyDiversity";
 import WhyWeTech from "./Pages/About/WhyWeTech/WhyWeTech";
 import IT from "./Pages/About/IT/IT";
 import ITSecurity from "./Pages/About/ITSecurity/ITSecurity";
-
+import StartUp from "./Pages/TemporaryStaffing/StartUp/StartUp";
+import Ai from "./Pages/TemporaryStaffing/Aitest/Ai";
 function App() {
   return (
     <BrowserRouter>
@@ -33,6 +34,16 @@ function App() {
         <Route
           path="/temporary-staffing/it-security"
           element={<ITSecurity />}
+          exact
+        />
+        <Route
+          path="/temporary-staffing/start-up"
+          element={<StartUp />}
+          exact
+        />
+        <Route
+          path="/temporary-staffing/ai"
+          element={<Ai />}
           exact
         />
       </Routes>

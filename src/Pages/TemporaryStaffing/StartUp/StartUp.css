@@ -1,0 +1,42 @@
+
+.startup-container {
+    font-family: "Lato", sans-serif; 
+}
+.startUp-lists li {
+ display: list-item !important;
+ list-style-type:decimal !important;   
+}
+.startUpbtn-left {
+    background-color: #fff;
+}
+.startUpbtn-left .button-container{
+    display: none;
+}
+
+.startUp-ctn .button-container {
+
+    background-image: url("../../../Assets/Images/StartUpPage/sidebar-cta-600x125-jobseekers2.jpg") !important;
+}
+.startUp-ctn .button-container .primary-button {
+    width: 60%;
+}
+.startUp-las {
+    margin-top: 40px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border: 2px solid #06a9ca;
+    color: #06a9ca;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.startUp-las:hover {
+    background-color: #06a9ca;
+    color: #fff;
+    border: 2px solid #06a9ca;
+    transition: 0.3s;
+}
+
+.startUpbtn-left>h2, .startUpbtn-left p {
+    margin: 0;
+}
