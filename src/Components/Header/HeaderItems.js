@@ -41,17 +41,37 @@ export const aboutUsDrop = [
 ];
 
 export const temporaryStaffingDrop = [
-  { id: 1, title: "it", cName: "submenu-item" },
-  { id: 2, title: "it security", cName: "submenu-item" },
-  { id: 3, title: "start up", cName: "submenu-item" },
-  { id: 4, title: "ai(artificial intalligence)", cName: "submenu-item" },
-  { id: 5, title: "enginering", cName: "submenu-item" },
-  { id: 6, title: "data", cName: "submenu-item" },
-  { id: 7, title: "gaming, animation & production", cName: "submenu-item" },
-  { id: 8, title: "help desk", cName: "submenu-item" },
-  { id: 9, title: "edtech", cName: "submenu-item" },
-  { id: 10, title: "creative", cName: "submenu-item" },
-  { id: 11, title: "professional services", cName: "submenu-item" },
+  { id: 1, title: "it", cName: "submenu-item", path: "/temporary-staffing/it" },
+  {
+    id: 2,
+    title: "it security",
+    cName: "submenu-item",
+    path: "/temporary-staffing/it-security",
+  },
+  { id: 3, title: "start up", cName: "submenu-item", path: "#FIXME" },
+  {
+    id: 4,
+    title: "ai(artificial intalligence)",
+    cName: "submenu-item",
+    path: "#FIXME",
+  },
+  { id: 5, title: "enginering", cName: "submenu-item", path: "#FIXME" },
+  { id: 6, title: "data", cName: "submenu-item", path: "#FIXME" },
+  {
+    id: 7,
+    title: "gaming, animation & production",
+    cName: "submenu-item",
+    path: "#FIXME",
+  },
+  { id: 8, title: "help desk", cName: "submenu-item", path: "#FIXME" },
+  { id: 9, title: "edtech", cName: "submenu-item", path: "#FIXME" },
+  { id: 10, title: "creative", cName: "submenu-item", path: "#FIXME" },
+  {
+    id: 11,
+    title: "professional services",
+    cName: "submenu-item",
+    path: "#FIXME",
+  },
 ];
 
 export const permanentPlacement = [

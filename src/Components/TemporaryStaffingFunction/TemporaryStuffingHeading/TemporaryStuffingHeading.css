@@ -1,0 +1,21 @@
+.temporaryStuffingHeading h1 {
+  color: #06a9ca;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  padding: 60px 0px 40px 0px;
+}
+
+.temporaryStuffingHeading h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}

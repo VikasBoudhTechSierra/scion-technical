@@ -1,0 +1,104 @@
+.itContainer {
+  margin-bottom: 100px;
+}
+
+.itContainer h1 {
+  color: #06a9ca;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  padding: 60px 0px 40px 0px;
+}
+
+.itContainer h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.itContainer .itContentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 70px 0px 70px 0px;
+}
+
+.itContainer .itContentContainer .itLeftContainer {
+  flex-basis: 50%;
+  padding-top: 20px;
+}
+
+.itContainer .itContentContainer .itRightContainer {
+  flex-basis: 45%;
+}
+
+.button-container {
+  margin-top: 30px;
+  padding: 15px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../../../Assets//Images//AbouUsPage/sidebar-cta-600x125-about2.jpg");
+}
+
+.itContainer .itContentContainer .itLeftContainer p {
+  color: #444;
+  font-size: 17px;
+  line-height: 27px;
+  padding-bottom: 10px;
+}
+
+.itContainer .itContentContainer .itLeftContainer h2 {
+  color: #000;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.itContainer .itContentContainer .itLeftContainer .secondPara {
+  color: #444;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.itContainer .belowGridContent {
+  color: #444;
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px 0px 50px;
+}
+
+.itContainer h5 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.it-section-btm-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.it-section-btm-links li a {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  font-size: 20px;
+  padding: 0;
+  text-align: center;
+  color: #06a9ca;
+  text-transform: uppercase;
+}

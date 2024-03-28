@@ -38,9 +38,9 @@ function TemporaryStaffingDown({ closeDropDown, title }) {
     >
       {temporaryStaffingDrop.map((item) => (
         <li key={item.id}>
-          <a href="#fixme" className={item.cName}>
+          <Link to={item.path} className={item.cName}>
             {item.title}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
@@ -143,13 +143,13 @@ const Header = () => {
             </div>
           </li>
           <li className="scionLogo">
-            <a href="#FIXME" title="Scion Technology">
+            <Link to={"/"} title="Tech Sierra">
               {scrollHeigth > 100 ? (
-                <img src={techsierraSmallLogo} alt="Scion Technology" />
+                <img src={techsierraSmallLogo} alt="Tech Sierra" />
               ) : (
-                <img src={techsierraLogo} alt="Scion Technology" />
+                <img src={techsierraLogo} alt="Tech Sierra" />
               )}
-            </a>
+            </Link>
           </li>
           <li>
             <a href="tel:+8884878850">call us: (888) 487-8850</a>

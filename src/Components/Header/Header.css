@@ -1,5 +1,5 @@
 .headerCtn {
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    width: 100%;
 }
 
 .sticky-header-show {
@@ -9,6 +9,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #ffffff;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .sticky-header-show header {
@@ -82,7 +83,11 @@
 .sticky-header-hide .scionLogo>a>img {
     width: 250px;
     height:135px;
-    filter: contrast(60%);
+    filter: contrast(80%);
+}
+
+.sticky-header-show .scionLogo>a>img {
+    filter: contrast(80%);
 }
 
 .nav-items {
