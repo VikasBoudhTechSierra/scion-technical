@@ -7,7 +7,11 @@ import Footer from "../../../Components/Footer/Footer";
 const IT = () => {
   return (
     <div>
-      <Header />
+      <div className="header-container">
+        <div className="wrapper">
+          <Header />
+        </div>
+      </div>
       <div className="itContainer wrapper">
         <h1>Temporary IT Technology Staffing Services</h1>
         <h3>

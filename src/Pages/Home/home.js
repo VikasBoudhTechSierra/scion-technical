@@ -55,7 +55,11 @@ const Home = () => {
 
   return (
     <div>
-      <Header />
+      <div className="header-container">
+        <div className="wrapper">
+          <Header />
+        </div>
+      </div>
       <Banner />
       <SectionThree />
       <TextBox

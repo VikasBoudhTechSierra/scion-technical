@@ -6,7 +6,11 @@ import missionandvalues from "../../../Assets/Images/AbouUsPage/Mission-and-Valu
 const OurMissionValue = () => {
   return (
     <div>
-      <Header />
+      <div className="header-container">
+        <div className="wrapper">
+          <Header />
+        </div>
+      </div>
       <div className="mission-values-container">
         <div className="wrapper">
           <h2 className="section-title">Our Mission &amp; Values</h2>
