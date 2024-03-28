@@ -1,0 +1,444 @@
+.wrapper .text_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.wrapper .text_container .main_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0 7% 0;
+
+}
+
+.text_container .main_header  h1{
+    color: #06a9ca;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.wrapper .sub_para_details{
+    display: flex;
+    flex-direction:column;
+}
+
+.wrapper .sub_para_details .sub_para_header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .sub_para_details .sub_para_header h1{
+    color:#000000;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.wrapper .sub_para_details .sub_para_header p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #444;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    padding-bottom: 7%;
+    
+}
+
+.wrapper .analyse_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.analyse_section .analyse_header{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px !important;
+    margin-bottom: 15px;
+
+}
+.analyse_section .analyse_header h3{
+    color: #000;
+    font-size: 28px;
+    text-transform: none;
+    
+}
+
+.analyse_section .flip_card_section{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+
+}
+
+.analyse_section .flip_card_section .flip_card{
+    background: transparent;
+    width: 300px;
+    height: 275px;
+    perspective: 1000px;
+    
+
+}
+
+.analyse_section .flip_card_section .flip_card .flip_card_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.flip_card:hover .flip_card_inner{
+    transform: rotateY(180deg);
+}
+
+.flip_card_back , .flip_card_front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip_card_front{
+    background: #fff;
+    color: #000;
+}
+.flip_card_front img{
+    height: 100%;
+    
+}
+.flip_card_back{
+    background-color: #fff;
+    color: #000;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip_card_back h2{
+    color: #444;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    
+}
+
+.flip_card_back p{
+    color: #444;
+    font-size: 17px;
+    line-height: 27px;
+}
+.analyse_section .analyse_para{
+
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.analyse_section .analyse_para p{
+    
+    text-align: center;
+    color: #444;
+    font-size: 16px;
+    line-height: 23px;
+    width: 100%;
+}
+
+.wrapper .staff_committee_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11%;
+    padding-bottom: 8%;
+}
+
+.wrapper .staff_committee_section .committee_header_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.wrapper .staff_committee_section .committee_header_section h3{
+
+    color: #000;
+    font-size: 28px;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+
+.wrapper .staff_committee_section .committee_card_section{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.staff_committee_section .committee_card_section .committee_card{
+    width: 23%;
+}
+
+.staff_committee_section .committee_card_section .committee_card .staff_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13% 0 5% 0;
+}
+
+.staff_committee_section .committee_card_section .committee_card .staff_name h3{
+    color: #000;
+    font-size: 17px;
+    line-height: 27px;
+
+}
+
+.staff_committee_section .committee_card_section .committee_card .about_staff p{
+    color: #444;
+    font-size: 17px;
+    line-height: 27px;
+
+}
+
+
+.wrapper .banner_image_section{
+    background: url('../../../Assets//Images//about_us_accomplished.png');
+    background-position: 50% 10px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.wrapper .banner_image_section .accomplished_section{
+   background-color: rgba(255, 255, 255, 0.8);
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-evenly;
+   padding-left: 1%;
+   padding-right: 1%;
+}
+
+.banner_image_section .accomplished_section .accomplished_header{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #444;
+}
+
+.banner_image_section .accomplished_section .accomplished_header h2{
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    padding-bottom: 10%;
+    padding-top: 5%;
+
+}
+
+.banner_image_section .accomplished_section .accomplished_para p{
+    color: #444;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+
+.banner_image_section .accomplished_section .accomplished_sub_header h4{
+    color: #06a9ca;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    text-align: left;
+}
+
+.banner_image_section .accomplished_section .accomplished_sub_header span{
+    color: #444;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.banner_image_section .accomplished_section .staff_areas_details h2{
+    color: #06a9ca;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.banner_image_section .accomplished_section .staff_areas_details .staff_point ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-top: 1%;
+
+}
+.banner_image_section .accomplished_section .staff_areas_details .staff_point ul li{
+    padding: 3px;
+}
+
+.banner_image_section .accomplished_section .accomplished_events ul{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.banner_image_section .accomplished_section .accomplished_events ul li{
+
+    margin-bottom: 5%;
+    color: #06a9ca;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner_image_section .accomplished_section .accomplished_subcommitties h2{
+    color: #06a9ca;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.banner_image_section .accomplished_section .subcommitties_points ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.banner_image_section .accomplished_section .subcommitties_points ul li{
+    padding: 3px;
+}
+
+.banner_image_section .accomplished_section .accomplished_finalized h2{
+    margin-top: 4%;
+    color: #06a9ca;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 5%;
+}
+
+.wrapper .banner_image_future_section{
+    background: url('../../../Assets//Images/about_us_future_hold.png');
+    background-position: 50% 10px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 945px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper .banner_image_future_section .future_section{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-around; */
+    padding-left: 1%;
+    position: relative;
+    top: 25%;
+
+}
+
+.wrapper .banner_image_future_section .future_section .future_header h2{
+    color: #000;
+    font-size: 28px;
+    text-transform: none;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.wrapper .banner_image_future_section .future_section .future_sub_head p{
+    color: #444;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 2px;
+}
+
+.wrapper .banner_image_future_section .future_section .future_points ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 7%;
+}
+.wrapper .banner_image_future_section .future_section .future_points ul li{
+    padding: 5px;
+}
+
+.diversity_section_main_title {
+    font-size: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+    position: relative;
+  }
+    
+  .diversity_section_main_title::after, .diversity_section_main_title::before {
+      content: '';
+      display: block;
+      border: 7px solid #000;
+      height: 0;
+      width: 0;
+      border-color: transparent;
+      left: 50%;
+      position: absolute;
+      bottom: -14px;
+      margin-left: -4px;
+   }
+  
+  .diversity_section_main_title::before {
+      border: 8px solid transparent;
+      border-top-color: #000;
+      margin-left: -5px;
+      margin-bottom: -2px;
+  }
+  
+  .diversity_section_main_title::after {
+      border-top-color: rgb(246, 246, 246) !important;
+  }
+  
+  .diversity_section_btm_container {
+    margin: 130px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .diversity_section_btm_links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .diversity_section_btm_links li a {
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+    color: #06a9ca;
+    text-transform: uppercase;
+  }
+  
