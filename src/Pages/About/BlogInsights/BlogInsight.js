@@ -56,7 +56,7 @@ const BlogInsight = () => {
           </ul>
           {blogContent.length > 0 && (
             <div className="pagination">
-              <span onClick={() => selectPageHandler(pages - 1)}>◀️</span>
+              <span onClick={() => selectPageHandler(pages - 1)}>{"<"}</span>
               {[...Array(totoalPages)].map((_, i) => {
                 return (
                   <span
@@ -68,7 +68,7 @@ const BlogInsight = () => {
                   </span>
                 );
               })}
-              <span onClick={() => selectPageHandler(pages + 1)}>▶️</span>
+              <span onClick={() => selectPageHandler(pages + 1)}>{">"}</span>
             </div>
           )}
         </div>

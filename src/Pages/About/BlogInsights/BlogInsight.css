@@ -1,6 +1,6 @@
 .blogInsight .blog-tabs {
-    padding: 2% 0;
-    display: flex;
+    padding: 5% 0 2%; 
+    display: flex; 
     flex-wrap: wrap;
 }
 
@@ -15,6 +15,10 @@
     flex-basis: 20%;
     text-transform: capitalize;
     font-weight: 600;
+}
+
+.blogInsight .blog-tabs>li:first-child {
+    color: #cb722d;
 }
 
 .blogInsight .subHeader {
@@ -39,6 +43,10 @@
 .blogInsight .subHeader p::selection {
     background: #cb722d;
     color: #ffffff;
+}
+
+.blogInsight .blog-image-container {
+    padding: 0 0 60px;
 }
 
 .blog-image-container ul {
@@ -68,18 +76,24 @@
 }
 
 .blog-image-container .pagination {
-    padding: 10px;
-    margin: 15px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .blog-image-container .pagination>span {
-    padding: 15px 20px;
-    border: 1px solid #808080;
+    padding: 10px 15px;
+    color: #b4b4b4;
+    border: 2px solid #e3e3e3;
     cursor: pointer; 
 }
 
+.blog-image-container .pagination>span:not(:last-child) {
+    margin-right: 2%;
+}
+
 .blog-image-container .pagination .pagination_selected {
-    background-color: rgba(220,220, 220);
+    background-color: #e3e3e3;
+    color: #9e5b21;
 }
