@@ -8,6 +8,7 @@ import OurMissionValue from "./Pages/About/OurMission&Value/OurMissionValue";
 import WhyDiversity from "./Pages/About/WhyDiversity/WhyDiversity";
 import WhyWeTech from "./Pages/About/WhyWeTech/WhyWeTech";
 import IT from "./Pages/About/IT/IT";
+import ITSecurity from "./Pages/About/ITSecurity/ITSecurity";
 
 function App() {
   return (
@@ -29,6 +30,11 @@ function App() {
         />
         <Route path="/about-us/why-tech" element={<WhyWeTech />} exact />
         <Route path="/temporary-staffing/it" element={<IT />} exact />
+        <Route
+          path="/temporary-staffing/it-security"
+          element={<ITSecurity />}
+          exact
+        />
       </Routes>
     </BrowserRouter>
   );

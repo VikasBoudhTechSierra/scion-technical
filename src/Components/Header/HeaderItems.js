@@ -42,7 +42,12 @@ export const aboutUsDrop = [
 
 export const temporaryStaffingDrop = [
   { id: 1, title: "it", cName: "submenu-item", path: "/temporary-staffing/it" },
-  { id: 2, title: "it security", cName: "submenu-item", path: "#FIXME" },
+  {
+    id: 2,
+    title: "it security",
+    cName: "submenu-item",
+    path: "/temporary-staffing/it-security",
+  },
   { id: 3, title: "start up", cName: "submenu-item", path: "#FIXME" },
   {
     id: 4,
