@@ -71,7 +71,10 @@ const WhyDiversity = () => {
 
   return (
     <>
-      <Header />
+    <div className="wrapper">
+    <Header />
+    </div>
+     
 
       <div className="diversity_section">
         <div className="wrapper">
