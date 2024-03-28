@@ -1,5 +1,5 @@
 .headerCtn {
-    box-shadow: 0px 20px 20px -20px rgba(0,0,0,0.45);
+    width: 100%;
 }
 
 .sticky-header-show {

@@ -1,0 +1,36 @@
+.blogInsight .blog-tabs {
+    padding: 2% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blogInsight .blog-tabs>li {
+    margin-bottom: 10px;
+    flex-basis: 20%;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.blogInsight .subHeader {
+    padding: 35px 0;
+    text-align: center;
+}
+
+.blogInsight .subHeader h3 {
+    padding-bottom: 10px;
+    color: #cb722d;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.blogInsight .subHeader p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.blogInsight .subHeader h3::selection,
+.blogInsight .subHeader p::selection {
+    background: #cb722d;
+    color: #ffffff;
+}
