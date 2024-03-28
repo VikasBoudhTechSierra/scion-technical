@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../../Components/Header/Header";
 import Footer from "../../../Components/Footer/Footer";
 import { blogContent, blogTabs } from "./BlogInsightData";
 import "./BlogInsight.css";
 
 const BlogInsight = () => {
+  const [pages, setPages] = useState(1);
+  const totoalPages = blogContent.length / 10;
+
+  const selectPageHandler = (selectedPage) => {
+    if (
+      selectedPage >= 1 &&
+      selectedPage <= totoalPages &&
+      selectedPage !== pages
+    ) {
+      setPages(selectedPage);
+    }
+  };
+
   return (
     <div className="blogInsight">
       <div className="header-container">
@@ -34,13 +47,30 @@ const BlogInsight = () => {
       <div className="blog-image-container">
         <div className="wrapper">
           <ul>
-            {blogContent.map((item) => (
+            {blogContent.slice(pages * 10 - 10, pages * 10).map((item) => (
               <li key={item.id}>
                 <img src={item.imgSource} alt={item.imgSource} />
                 <h3>{item.content}</h3>
               </li>
             ))}
           </ul>
+          {blogContent.length > 0 && (
+            <div className="pagination">
+              <span onClick={() => selectPageHandler(pages - 1)}>◀️</span>
+              {[...Array(totoalPages)].map((_, i) => {
+                return (
+                  <span
+                    onClick={() => selectPageHandler(i + 1)}
+                    key={i}
+                    className={pages === i + 1 ? "pagination_selected" : ""}
+                  >
+                    {i + 1}
+                  </span>
+                );
+              })}
+              <span onClick={() => selectPageHandler(pages + 1)}>▶️</span>
+            </div>
+          )}
         </div>
       </div>
       <Footer />

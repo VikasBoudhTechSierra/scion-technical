@@ -170,11 +170,6 @@ export const blogContent = [
     content: "Best Tips for Job Seekers New to the Tech Sector",
   },
   {
-    id: 31,
-    imgSource: "https://placehold.co/349x200",
-    content: "Best Tips for Job Seekers New to the Tech Sector",
-  },
-  {
     id: 32,
     imgSource: "https://placehold.co/349x200",
     content: "Best Tips for Job Seekers New to the Tech Sector",
@@ -197,26 +192,26 @@ export const blogContent = [
   {
     id: 36,
     imgSource: "https://placehold.co/349x200",
-    content: "Best Tips for Job Seekers New to the Tech Sector",
+    content: "Benefits of Working With a Tech Startup",
   },
   {
     id: 37,
     imgSource: "https://placehold.co/349x200",
-    content: "Best Tips for Job Seekers New to the Tech Sector",
+    content: "Where to find the best Help Desk Jobs",
   },
   {
     id: 38,
     imgSource: "https://placehold.co/349x200",
-    content: "Best Tips for Job Seekers New to the Tech Sector",
+    content: "How to Craft a High-Quality Tech Resume",
   },
   {
     id: 39,
     imgSource: "https://placehold.co/349x200",
-    content: "Best Tips for Job Seekers New to the Tech Sector",
+    content: "Best Places to Release Indie Video Games",
   },
   {
     id: 40,
     imgSource: "https://placehold.co/349x200",
-    content: "Best Tips for Job Seekers New to the Tech Sector",
+    content: "Why are Web Developers in High-Demand?",
   },
 ];
