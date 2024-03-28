@@ -4,6 +4,12 @@
     flex-wrap: wrap;
 }
 
+.blogInsight .blog-content,
+.blogInsight .subHeader,
+.blogInsight .blog-image-container  {
+    background-color: #f2f2f2;
+}
+
 .blogInsight .blog-tabs>li {
     margin-bottom: 10px;
     flex-basis: 20%;
@@ -12,7 +18,7 @@
 }
 
 .blogInsight .subHeader {
-    padding: 35px 0;
+    padding: 25px 0;
     text-align: center;
 }
 
@@ -33,4 +39,23 @@
 .blogInsight .subHeader p::selection {
     background: #cb722d;
     color: #ffffff;
+}
+
+.blog-image-container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-image-container ul li {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+}
+
+.blog-image-container ul li:not(:nth-of-type(3n)) {
+    margin-right: 2%;
+}
+
+.blog-image-container ul li h3 {
+    padding: 3% 2%;
+    background-color: #ffffff;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../../Components/Header/Header";
 import Footer from "../../../Components/Footer/Footer";
-import { blogTabs } from "./BlogInsightData";
+import { blogContent, blogTabs } from "./BlogInsightData";
 import "./BlogInsight.css";
 
 const BlogInsight = () => {
@@ -29,6 +29,18 @@ const BlogInsight = () => {
             new employees, or workplace trends and tips? We've got all of this
             and more on the blog!
           </p>
+        </div>
+      </div>
+      <div className="blog-image-container">
+        <div className="wrapper">
+          <ul>
+            {blogContent.map((item) => (
+              <li key={item.id}>
+                <img src={item.imgSource} alt={item.imgSource} />
+                <h3>{item.content}</h3>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <Footer />
