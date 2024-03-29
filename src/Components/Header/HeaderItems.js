@@ -3,7 +3,7 @@ export const NavItems = [
     id: 1,
     title: "about us",
     cName: "nav-item",
-    path: "/about-us/blog-insight",
+    path: "/about-us/our-mission-value",
   },
   {
     id: 2,
