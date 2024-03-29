@@ -7,3 +7,10 @@ export const HTADATA = [
   { id: 2, imgSrc: step2, text: "apply directly", path: "#FIXME" },
   { id: 3, imgSrc: step3, text: "upload resume", path: "#FIXME" },
 ];
+
+export const JOBSEEKERINFODATA = [
+  { id: 1, content: "your job search", path: "#FIXME" },
+  { id: 2, content: "open positions", path: "#FIXME" },
+  { id: 3, content: "interview tips", path: "#FIXME" },
+  { id: 4, content: "what we offers", path: "#FIXME" },
+];

@@ -1,7 +1,8 @@
 import React from "react";
 import "./HowToApply.css";
 import Header from "../../../Components/Header/Header";
-import { HTADATA } from "./HTAData";
+import Footer from "../../../Components/Footer/Footer";
+import { HTADATA, JOBSEEKERINFODATA } from "./HTAData";
 
 const HowToApply = () => {
   return (
@@ -65,6 +66,32 @@ const HowToApply = () => {
           </ul>
         </div>
       </div>
+      <div className="HTASendInfo">
+        <div className="wrapper">
+          <h4>
+            <span>Be Considered For New Opportunities</span>
+            <span>By Telling Us Who You Are</span>
+          </h4>
+          <span>
+            <button>send us your info</button>
+          </span>
+        </div>
+      </div>
+      <div className="seeker-information">
+        <div className="wrapper">
+          <h3>
+            <span>more job seeker information</span>
+          </h3>
+          <ul>
+            {JOBSEEKERINFODATA.map((item) => (
+              <li key={item.id}>
+                <a href={item.path}>{item.content}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
