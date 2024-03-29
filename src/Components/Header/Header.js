@@ -72,9 +72,9 @@ function ApplyDown({ closeDropDown, title }) {
     >
       {applyDrop.map((item) => (
         <li key={item.id}>
-          <a href="#fixme" className={item.cName}>
+          <Link to={item.path} className={item.cName}>
             {item.title}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

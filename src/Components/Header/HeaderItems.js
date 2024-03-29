@@ -48,7 +48,12 @@ export const temporaryStaffingDrop = [
     cName: "submenu-item",
     path: "/temporary-staffing/it-security",
   },
-  { id: 3, title: "start up", cName: "submenu-item", path: "/temporary-staffing/start-up" },
+  {
+    id: 3,
+    title: "start up",
+    cName: "submenu-item",
+    path: "/temporary-staffing/start-up",
+  },
   {
     id: 4,
     title: "ai(artificial intalligence)",
@@ -93,11 +98,31 @@ export const permanentPlacement = [
 ];
 
 export const applyDrop = [
-  { id: 1, title: "how to apply", cName: "submenu-item" },
-  { id: 2, title: "search it jobs", cName: "submenu-item" },
-  { id: 3, title: "it job interview tips", cName: "submenu-item" },
-  { id: 4, title: "positions we recruit", cName: "submenu-item" },
-  { id: 5, title: "accounts", cName: "submenu-item" },
+  {
+    id: 1,
+    title: "how to apply",
+    cName: "submenu-item",
+    path: "/apply/how-to-apply",
+  },
+  {
+    id: 2,
+    title: "search it jobs",
+    cName: "submenu-item",
+    path: "/apply/search-it-jobs",
+  },
+  {
+    id: 3,
+    title: "it job interview tips",
+    cName: "submenu-item",
+    path: "/apply/it-jobs",
+  },
+  {
+    id: 4,
+    title: "positions we recruit",
+    cName: "submenu-item",
+    path: "/apply/position-we-recurit",
+  },
+  { id: 5, title: "accounts", cName: "submenu-item", path: "/apply/accounts" },
 ];
 
 export const hireDrop = [{ id: 1, title: "hire staff", cName: "submenu-item" }];
