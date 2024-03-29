@@ -1,68 +1,8 @@
-import React, { useEffect, useState } from "react";
-import techsierraLogo from "../../Assets/Images/TechSierraBigFadedLogo.png";
+import React, { useState } from "react";
 import techsierraSmallLogo from "../../Assets/Images/TechSierraLogo.png";
-
-import {
-  NavItems,
-  aboutUsDrop,
-  applyDrop,
-  hireDrop,
-  permanentPlacement,
-  temporaryStaffingDrop,
-} from "./HeaderItems";
-import "./Header.css";
+import { NavItems, applyDrop } from "./HeaderItems";
 import { Link } from "react-router-dom";
-
-function AboutUsDown({ closeDropDown, title }) {
-  return (
-    <ul
-      className={`services-subMenu ${title}`}
-      onMouseLeave={() => closeDropDown(false)}
-    >
-      {aboutUsDrop.map((item) => (
-        <li key={item.id}>
-          <Link to={item.path} className={item.cName}>
-            {item.title}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-function TemporaryStaffingDown({ closeDropDown, title }) {
-  return (
-    <ul
-      className={`services-subMenu ${title}`}
-      onMouseLeave={() => closeDropDown(false)}
-    >
-      {temporaryStaffingDrop.map((item) => (
-        <li key={item.id}>
-          <Link to={item.path} className={item.cName}>
-            {item.title}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-function PermenrntPlacementDown({ closeDropDown, title }) {
-  return (
-    <ul
-      className={`services-subMenu ${title}`}
-      onMouseLeave={() => closeDropDown(false)}
-    >
-      {permanentPlacement.map((item) => (
-        <li key={item.id}>
-          <a href="#fixme" className={item.cName}>
-            {item.title}
-          </a>
-        </li>
-      ))}
-    </ul>
-  );
-}
+import "./Header.css";
 
 function ApplyDown({ closeDropDown, title }) {
   return (
@@ -72,26 +12,9 @@ function ApplyDown({ closeDropDown, title }) {
     >
       {applyDrop.map((item) => (
         <li key={item.id}>
-          <a href="#fixme" className={item.cName}>
+          <Link to={item.path} className={item.cName}>
             {item.title}
-          </a>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-function HireDown({ closeDropDown, title }) {
-  return (
-    <ul
-      className={`services-subMenu ${title}`}
-      onMouseLeave={() => closeDropDown(false)}
-    >
-      {hireDrop.map((item) => (
-        <li key={item.id}>
-          <a href="#fixme" className={item.cName}>
-            {item.title}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
@@ -99,114 +22,27 @@ function HireDown({ closeDropDown, title }) {
 }
 
 const Header = () => {
-  const [scrollHeigth, setScrollHeight] = useState(0);
-  const [showAboutDropDown, setAboutShowDropDown] = useState(false);
-  const [showTPDropDown, setTPShowDropDown] = useState(false);
-  const [showPermanentPlacement, setShowPermentPlacement] = useState(false);
   const [showApplyDrop, setShowApplyDrop] = useState(false);
-  const [showHireDrop, setShowHireDrop] = useState(false);
-  const [showNav, setShowNav] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollHeight = window.scrollY;
-      setScrollHeight(scrollHeight);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
-    <div
-      className={`wrapper headerCtn ${
-        scrollHeigth > 100 ? "sticky-header-show" : "sticky-header-hide"
-      }`}
-      onMouseMoveCapture={() => setShowNav(true)}
-      onMouseLeave={() => setShowNav(false)}
-    >
+    <div className={`wrapper headerCtn ${"sticky-header-hide"}`}>
       <header>
         <ul className="headerLogoUl">
           <li className="scionLogo">
             <Link to={"/"} title="Tech Sierra">
-              {scrollHeigth > 100 ? (
-                <img
-                  src={techsierraSmallLogo}
-                  className="techSierraSmallLogo"
-                  alt="Tech Sierra"
-                />
-              ) : (
-                <img src={techsierraLogo} alt="Tech Sierra" />
-              )}
+              <img
+                src={techsierraSmallLogo}
+                className="techSierraSmallLogo"
+                alt="Tech Sierra"
+              />
             </Link>
           </li>
         </ul>
       </header>
-      <nav
-        className={`${
-          scrollHeigth > 100
-            ? `HideNav ${showNav ? "visibleNav" : ""}`
-            : `ShowNav`
-        }`}
-      >
+      <nav className={`${"visibleNav"}`}>
         <ul className="nav-items">
           {NavItems.map((item) => {
-            if (item.title === "about us") {
-              return (
-                <li
-                  key={item.id}
-                  className={item.cName}
-                  onMouseMoveCapture={() => setAboutShowDropDown(true)}
-                  onMouseLeave={() => setAboutShowDropDown(false)}
-                >
-                  <a href="#FIXME">{item.title}</a>
-                  {showAboutDropDown && (
-                    <AboutUsDown
-                      closeDropDown={setAboutShowDropDown}
-                      title={item.title}
-                    />
-                  )}
-                </li>
-              );
-            } else if (item.title === "temporary staffing") {
-              return (
-                <li
-                  key={item.id}
-                  className={item.cName}
-                  onMouseMoveCapture={() => setTPShowDropDown(true)}
-                  onMouseLeave={() => setTPShowDropDown(false)}
-                >
-                  <a href="#FIXME">{item.title}</a>
-                  {showTPDropDown && (
-                    <TemporaryStaffingDown
-                      closeDropDown={setTPShowDropDown}
-                      title={item.title}
-                    />
-                  )}
-                </li>
-              );
-            } else if (item.title === "permenrnt placement") {
-              return (
-                <li
-                  key={item.id}
-                  className={item.cName}
-                  onMouseMoveCapture={() => setShowPermentPlacement(true)}
-                  onMouseLeave={() => setShowPermentPlacement(false)}
-                >
-                  <a href="#FIXME">{item.title}</a>
-                  {showPermanentPlacement && (
-                    <PermenrntPlacementDown
-                      closeDropDown={setShowPermentPlacement}
-                      title={item.title}
-                    />
-                  )}
-                </li>
-              );
-            } else if (item.title === "apply") {
+            if (item.title === "apply") {
               return (
                 <li
                   key={item.id}
@@ -214,7 +50,7 @@ const Header = () => {
                   onMouseMoveCapture={() => setShowApplyDrop(true)}
                   onMouseLeave={() => setShowApplyDrop(false)}
                 >
-                  <a href="#FIXME">{item.title}</a>
+                  <Link to={item.path}>{item.title}</Link>
                   {showApplyDrop && (
                     <ApplyDown
                       closeDropDown={setShowApplyDrop}
@@ -223,27 +59,10 @@ const Header = () => {
                   )}
                 </li>
               );
-            } else if (item.title === "hire") {
-              return (
-                <li
-                  key={item.id}
-                  className={item.cName}
-                  onMouseMoveCapture={() => setShowHireDrop(true)}
-                  onMouseLeave={() => setShowHireDrop(false)}
-                >
-                  <a href="#FIXME">{item.title}</a>
-                  {showHireDrop && (
-                    <HireDown
-                      closeDropDown={setShowHireDrop}
-                      title={item.title}
-                    />
-                  )}
-                </li>
-              );
             }
             return (
               <li key={item.id} className={item.cName}>
-                <a href="#FIXME">{item.title}</a>
+                <Link to={item.path}>{item.title}</Link>
               </li>
             );
           })}

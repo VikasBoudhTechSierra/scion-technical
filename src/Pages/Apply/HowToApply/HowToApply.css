@@ -1,0 +1,163 @@
+.howToApply .HTABanner{
+    padding: 5% 0;
+    background-image: url(../../../Assets/Images/Apply/HowToApplyBG.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+} 
+
+.howToApply .HTABanner .wrapper>h2,
+.howToApply .HTABanner .wrapper>p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.howToApply .HTABanner .wrapper>h2 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 600;
+    border-bottom: 2px solid #ffffff;
+}
+
+.howToApply .HTABanner .wrapper>p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.howToApply  .HTAContent {
+    padding: 3% 0;
+    background-color: #cb722d;
+    color: #ffffff;
+}
+
+.howToApply  .HTAContent p {
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.howToApply  .HTAContent p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.howToApply  .HTAContent ul {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.howToApply  .HTAContent ul>li {
+    text-align: center;
+}
+
+.howToApply  .HTAContent ul>li>h4 {
+    padding-top: 15px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.howToApply  .HTAContent ul>li>img {
+    width: 175px;
+    height: 225px;
+    object-fit: contain;
+}
+
+.howToApply .HTASendInfo {
+    padding: 4% 0;
+    background-color: #000000;
+}
+
+.howToApply .HTASendInfo .wrapper {
+    padding: 7% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../Assets/Images/Apply//ctaBGApply.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.howToApply .HTASendInfo .wrapper>h4 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    color: #000000;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.howToApply .HTASendInfo .wrapper>span {
+    flex-basis: 30%;
+}
+
+.howToApply .HTASendInfo .wrapper>span button {
+    padding: 30px;
+    border-radius: 4px;
+    border-color: #9e5b21;
+    background-color: #cb722d;
+    color: #fff;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.howToApply .seeker-information {
+    padding: 5% 0;
+    background-color: #f2f2f2;
+}
+
+.howToApply .seeker-information h3 {
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.howToApply .seeker-information h3>span {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000;
+    position: relative;
+}
+
+.howToApply .seeker-information h3>span::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    background-color: #f2f2f2;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transform: rotate(-45deg);
+}
+
+.howToApply .seeker-information ul {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.howToApply .seeker-information ul>li {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    transition: .3s ease-in;
+}
+
+.howToApply .seeker-information ul>li a {
+    color: #cb722d;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.howToApply .seeker-information ul>li:hover {
+    background-color: #ffffff;
+}
