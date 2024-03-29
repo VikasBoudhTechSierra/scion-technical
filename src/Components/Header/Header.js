@@ -130,29 +130,19 @@ const Header = () => {
       onMouseLeave={() => setShowNav(false)}
     >
       <header>
-        <ul>
-          <li>
-            <div>
-              <a href="#FIXME" title="Search Jobs">
-                search jobs
-              </a>{" "}
-              |{" "}
-              <a href="#FIXME" title="Hire Staff">
-                hire staff
-              </a>
-            </div>
-          </li>
+        <ul className="headerLogoUl">
           <li className="scionLogo">
             <Link to={"/"} title="Tech Sierra">
               {scrollHeigth > 100 ? (
-                <img src={techsierraSmallLogo} alt="Tech Sierra" />
+                <img
+                  src={techsierraSmallLogo}
+                  className="techSierraSmallLogo"
+                  alt="Tech Sierra"
+                />
               ) : (
                 <img src={techsierraLogo} alt="Tech Sierra" />
               )}
             </Link>
-          </li>
-          <li>
-            <a href="tel:+8884878850">call us: (888) 487-8850</a>
           </li>
         </ul>
       </header>

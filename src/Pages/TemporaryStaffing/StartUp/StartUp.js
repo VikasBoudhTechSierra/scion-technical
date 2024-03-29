@@ -4,7 +4,6 @@ import Footer from "../../../Components/Footer/Footer";
 import TemporaryStuffingHeading from "../../../Components/TemporaryStaffingFunction/TemporaryStuffingHeading/TemporaryStuffingHeading";
 import TemporaryStuffingParaSection from "../../../Components/TemporaryStaffingFunction/TemporaryStuffingParaSection/TemporaryStuffingParaSection";
 import TemporaryStuffingImgSection from "../../../Components/TemporaryStaffingFunction/TemporaryStuffingImgSection/TemporaryStuffingImgSection";
-import BelowProductGrid from "../../../Components/BelowContentGrid/BelowProductGrid";
 import TemporaryStaffingAboveFooter from "../../../Components/TemporaryStaffingFunction/TemporaryStaffingAboveFooter/TemporaryStaffingAboveFooter";
 import TemporaryStaffingLists from "../../../Components/TemporaryStaffingFunction/TemporaryStaffingLists/TemporaryStaffingLists";
 import "./StartUp.css";
@@ -37,7 +36,6 @@ const Startup = () => {
             />
             <ol className="startUp-lists">
               <li>
-                
                 <TemporaryStaffingLists
                   subTitle="Expertise"
                   subPara="Our team of recruiters has comprehensive knowledge of the tech industry. We stay updated on the latest trends and developments, allowing us to identify candidates who possess the required skills, experience, and cultural compatibility to succeed in your startup environment."
@@ -45,21 +43,18 @@ const Startup = () => {
               </li>
 
               <li>
-        
                 <TemporaryStaffingLists
                   subTitle="Quality Candidates"
                   subPara="We have a rigorous screening and evaluation process to ensure we present you with the most qualified candidates. Our extensive network and industry connections enable us to attract highly skilled professionals who are passionate about contributing to tech startups."
                 />
               </li>
               <li>
-           
                 <TemporaryStaffingLists
                   subTitle="Tailored Solutions"
                   subPara="We recognize that every startup has unique requirements. We work closely with you to understand your company’s culture, values, and organizational needs. This enables us to customize our approach and deliver staffing solutions that align with your business goals."
                 />
               </li>
               <li>
-             
                 <TemporaryStaffingLists
                   subTitle="Speed and Efficiency"
                   subPara="We know things move quickly, and we understand the urgency of filling key positions within startups. Our streamlined processes and proactive approach enable us to identify and present qualified candidates quickly, saving you time and effort in the hiring process."
@@ -83,11 +78,8 @@ const Startup = () => {
           </div>
         </div>
         <div className="itContentContainer startUpbtn-left">
-        <div className="itRightContainer">
-            <TemporaryStuffingImgSection
-        
-              imageUrl={StartupImgTwo}
-            />
+          <div className="itRightContainer">
+            <TemporaryStuffingImgSection imageUrl={StartupImgTwo} />
           </div>
           <div className="itLeftContainer">
             <TemporaryStuffingParaSection
@@ -99,7 +91,6 @@ const Startup = () => {
             />
             <ol className="startUp-lists">
               <li>
-                
                 <TemporaryStaffingLists
                   subTitle="Software Development Startups"
                   subPara="We have extensive experience in staffing startups focused on software development. This includes web and mobile application development, software engineering, front-end and back-end development, and more."
@@ -107,21 +98,18 @@ const Startup = () => {
               </li>
 
               <li>
-        
                 <TemporaryStaffingLists
                   subTitle="Artificial Intelligence (AI) and Machine Learning (ML) Startups"
                   subPara=" As AI and ML continue to transform industries, we provide staffing solutions for startups working on cutting-edge technologies in these fields. This includes roles such as AI engineers, data scientists, machine learning specialists, and natural language processing experts."
                 />
               </li>
               <li>
-           
                 <TemporaryStaffingLists
                   subTitle="E-commerce Startups"
                   subPara="We understand the unique staffing needs of e-commerce startups, from building robust platforms to managing inventory and logistics. Our expertise includes staffing for roles like e-commerce managers, web designers, UX/UI specialists, and digital marketers."
                 />
               </li>
               <li>
-             
                 <TemporaryStaffingLists
                   subTitle="Cybersecurity Startups"
                   subPara="Security is paramount in today’s digital landscape, and we excel in sourcing talent for cybersecurity startups. Our network includes professionals skilled in network security, ethical hacking, information security analysis, and more."
@@ -140,10 +128,16 @@ const Startup = () => {
                 />
               </li>
             </ol>
-            <p>These are just a few examples of the startup types we serve. Regardless of your industry or niche, Scion Technology has the expertise to connect you with the talented individuals who can drive your startup’s success.</p>
-            <a href="#FIXME" target="_self" class="startUp-las" >Launch A Search</a>
+            <p>
+              These are just a few examples of the startup types we serve.
+              Regardless of your industry or niche, Scion Technology has the
+              expertise to connect you with the talented individuals who can
+              drive your startup’s success.
+            </p>
+            <a href="#FIXME" target="_self" class="startUp-las">
+              Launch A Search
+            </a>
           </div>
-          
         </div>
 
         <TemporaryStaffingAboveFooter

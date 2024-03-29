@@ -7,3 +7,14 @@ div {
     rgba(0, 212, 255, 1) 100%
   );
 }
+
+.homePage {
+  scroll-behavior: smooth;
+}
+
+.homePage .block {
+  height: 50px;
+  width: 100%;
+  color: black;
+  background-color: black;
+}
