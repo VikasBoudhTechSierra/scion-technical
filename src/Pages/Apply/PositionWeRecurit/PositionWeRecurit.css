@@ -1,0 +1,49 @@
+.pwr-ctn {
+    font-family: "Lato", sans-serif;
+}
+
+.pwr-ctn .itLeftContainer ul li{
+    display: list-item;
+    list-style-type:disc;
+}
+
+.pwr-btm-heading {
+    text-align: center;
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.pwr-btm-lists {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pwr-btm-lists div {
+    margin: 2% 0;
+    flex-basis: 30%;
+    line-height: 1.8;
+}
+
+.pwr-btm-lists div h4 {
+    font-weight: 600;
+}
+
+.pwr-btm-lists div ul li {
+    display: list-item;
+    list-style-type: "-";
+    color: #444;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.pwr-btm-lists div:nth-child(5) ul h4{
+    font-style: italic;
+}
+
+.pwr-above-footer .it-section-btm-links{
+    list-style-type: none;
+}
