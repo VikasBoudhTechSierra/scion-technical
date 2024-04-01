@@ -1,0 +1,284 @@
+.hire_section{
+
+    background: #f6f6f6;
+}
+
+.hire-btm-ctn .button-container {
+    display: none;
+}
+
+.hire-btm-ctn {
+    margin-top: 3%;
+}
+.hire .itContainer{
+    margin-bottom: 0 !important;
+}
+.hire .itContainer .itContentContainer{
+        padding: 70px 0px 29px 0px;
+ 
+}
+
+.wrapper .crousel_container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 2% 5% 2%;
+    background: #FFFFFF;
+
+}
+
+.wrapper .crousel_container .crousel_card {
+    width: 98% !important;
+    background: #CB722C;
+    padding: 11% 0% 11% 0% !important;
+    border-radius: 8%;
+
+}
+
+.wrapper .crousel_container .slider {
+    width: 100%;
+    height: 200px;
+}
+
+.crousel_container .crousel_card .carousel_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crousel_container .crousel_card .carousel_text p {
+
+    font-size: 14px;
+    text-align: center;
+    color: #FEE7B7;
+    padding: 0 5%;
+}
+
+.crousel_container .crousel_card .author_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.crousel_container .crousel_card .author_name span {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #ffff;
+}
+
+.crousel_container .slick-dots li button::before {
+    font-size: 15px !important;
+    color: #b3b0b0 !important;
+    opacity: 0.7 !important;
+}
+
+.crousel_container .slick-dots .slick-active button::before {
+    color: #3d60d4 !important;
+}
+
+.custom-arrow {
+    color: #b3b3b3;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+.custom-prev {
+    left: -50px;
+    top: 25%;
+}
+
+.custom-next {
+    right: -43px;
+    top: 25%;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    color: #3d60d4;
+}
+
+.wrapper .form_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 2%;
+    padding-left: 2%;
+}
+
+.wrapper .form_container .form_header h3 {
+    font-size: 18px;
+    color: #CB722C;
+    font-weight: 600;
+
+}
+
+.form_container .input_container {
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.form_container .input_container .input_row_field {
+    display: flex;
+}
+
+.form_container .input_container .input_row_field .input_field {
+    width: 48.8%;
+}
+
+.form_container .input_container .input_row_field .input_field select {
+    width: 96%;
+    height: 38px;
+    border: 2px solid #777;
+    font-size: 20px;
+    color: #000;
+}
+
+.form_container .input_container .input_field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+
+.form_container .input_container .input_field input {
+    width: 95%;
+    height: 35px;
+    border: 2px solid #777;
+    font-size: 17px;
+    color: #000;
+
+}
+
+.form_container .input_container .input_field .file_field {
+    border: none;
+}
+
+.form_container .input_container .input_field label {
+    padding-bottom: 1%;
+    font-weight: 600;
+    color: #000;
+}
+
+.form_container .input_container .input_field label span {
+    color: #790000;
+    margin-left: 4px;
+    font-size: 25px;
+}
+
+.input_container .textare_field {
+    padding-bottom: 2%;
+}
+
+.input_container .textare_field label {
+    font-size: 17px;
+    color: #000;
+
+}
+
+.input_container .textare_field textarea {
+    border: 2px solid #777;
+    color: #777;
+    font-size: 17px;
+    width: 95%;
+
+}
+
+.input_container .input_field select {
+    width: 95.8%;
+    height: 38px;
+    border: 2px solid #777;
+    font-size: 20px;
+    color: #000;
+}
+
+.form_container .btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form_container .btn button {
+
+    height: 39px;
+    width: 13%;
+    font-size: 25px;
+    font-weight: 500;
+    /* padding: 2%; */
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+.form_container .btn button:hover {
+    color: #CB722C;
+}
+
+.hire_section_main_title {
+    font-size: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.hire_section_main_title::after,
+.hire_section_main_title::before {
+    content: '';
+    display: block;
+    border: 7px solid #000;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    left: 50%;
+    position: absolute;
+    bottom: -14px;
+    margin-left: -4px;
+}
+
+.hire_section_main_title::before {
+    border: 8px solid transparent;
+    border-top-color: #000;
+    margin-left: -5px;
+    margin-bottom: -2px;
+}
+
+.hire_section_main_title::after {
+    border-top-color: rgb(246, 246, 246) !important;
+}
+
+.hire_section_btm_container {
+    margin: 130px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hire_section_btm_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.hire_section_btm_links li a {
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+    color: #06a9ca;
+    text-transform: uppercase;
+}
