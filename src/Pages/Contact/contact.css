@@ -1,7 +1,8 @@
 .contact-ctn {
   font-family: "Lato", sans-serif;
-  background-color: #f6f6f6;
+  
 }
+
 
 .contact-header {
   width: 100%;
@@ -28,6 +29,10 @@
   padding-bottom: 25px;
   font-size: 28px;
   text-transform: none;
+}
+
+.contact-main {
+    background-color: #f6f6f6;
 }
 
 .contact-main-header h2 {
