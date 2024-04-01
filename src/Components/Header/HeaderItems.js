@@ -47,5 +47,10 @@ export const applyDrop = [
     cName: "submenu-item",
     path: "/apply/position-we-recurit",
   },
-  { id: 5, title: "accounts", cName: "submenu-item", path: "/apply/accounts" },
+  {
+    id: 5,
+    title: "apply with us",
+    cName: "submenu-item",
+    path: "/apply/accounts",
+  },
 ];
