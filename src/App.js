@@ -16,14 +16,14 @@ import HowToApply from "./Pages/Apply/HowToApply/HowToApply";
 import ItJobsInterview from "./Pages/Apply/ITJobsInterviewTips/ItJobsInterview";
 import SearchItJobs from "./Pages/Apply/Search_IT_JOBs/SearchItJobs";
 import PositionWeRecurit from "./Pages/Apply/PositionWeRecurit/PositionWeRecurit";
-
-
+import Hire from "./Pages/Hire/Hire";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/contact-us" element={<Contact />} exact />
+        <Route path="/hire" element={<Hire />} exact />
         <Route path="/about-us/blog-insight" element={<BlogInsight />} exact />
         <Route path="/about-us/our-clients" element={<OurClinets />} exact />
         <Route
