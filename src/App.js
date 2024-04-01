@@ -58,6 +58,7 @@ function App() {
           element={<PositionWeRecurit />}
           exact
         />
+      <Route path="/contact" element={<Contact />} exact />
       </Routes>
     </BrowserRouter>
   );
