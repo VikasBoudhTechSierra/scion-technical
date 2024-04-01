@@ -47,7 +47,7 @@ function App() {
           exact
         />
         <Route path="/temporary-staffing/ai" element={<Ai />} exact />
-        <Route path="/apply/accounts" element={<ApplyWithUs />} exact />
+        <Route path="/apply/apply-with-us" element={<ApplyWithUs />} exact />
         <Route path="/apply/how-to-apply" element={<HowToApply />} exact />
         <Route path="/apply/it-jobs" element={<ItJobsInterview />} exact />
         <Route path="/apply/search-it-jobs" element={<SearchItJobs />} exact />
