@@ -51,6 +51,6 @@ export const applyDrop = [
     id: 5,
     title: "apply with us",
     cName: "submenu-item",
-    path: "/apply/accounts",
+    path: "/apply/apply-with-us",
   },
 ];
