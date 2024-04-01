@@ -1,0 +1,124 @@
+.applyForm {
+    padding: 5% 0;
+    background-color: #f2f2f2;
+}
+
+.applyForm .wrapper>h3 {
+    color: #cb722d;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1.1px;
+}
+
+.applyForm .wrapper>h5 {
+    padding: 3% 0;
+    border-top: 2px solid #9a9a9a;
+    border-bottom: 2px solid #9a9a9a;
+    margin: 3% 0 0;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.applyForm .wrapper>h5>span {
+    letter-spacing: 1.1px;
+}
+
+.applyForm .apply-form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.applyForm .wrapper>form {
+    padding-top: 3%;
+}
+
+.applyForm .apply-form-group>div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+.applyForm .apply-form-group>div label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.02px;
+    text-transform: capitalize;
+}
+
+.applyForm .apply-form-group>div input {
+    padding: 2%;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    border: 3px solid #9a9a9a;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.applyForm .apply-form-group>div textarea {
+    padding: 2%;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    border: 3px solid #9a9a9a;
+    background-color: #ffffff;
+}
+
+.applyForm .apply-form-group>div input[type="file"] {
+    border: 3px solid transparent;
+    background-color: transparent;
+}
+
+.applyForm .apply-form-group>div input[type="radio"],
+.applyForm .apply-form-group>div input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.applyForm .apply-form-group.textarea>div {
+    flex-basis: 100%;
+}
+
+.applyForm .apply-form-group>div:not(:last-child) {
+    margin-right: 4%;
+}
+
+.applyForm .apply-btn>button {
+    padding: 12px 20px;
+    outline: 0;
+    border: 0;
+    border: 3px solid #9a9a9a;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: .2s ease-in;
+}
+
+.applyForm .apply-btn>button:hover {
+    border: 3px solid transparent;
+    background-color: #cb722d;
+    color: #ffffff;
+}
+
+.applyForm .text-note {
+    margin-bottom: 20px;
+}
+
+.applyForm .text-note>span {
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+}
