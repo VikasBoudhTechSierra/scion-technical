@@ -16,6 +16,8 @@ import HowToApply from "./Pages/Apply/HowToApply/HowToApply";
 import ItJobsInterview from "./Pages/Apply/ITJobsInterviewTips/ItJobsInterview";
 import SearchItJobs from "./Pages/Apply/Search_IT_JOBs/SearchItJobs";
 import PositionWeRecurit from "./Pages/Apply/PositionWeRecurit/PositionWeRecurit";
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -56,6 +58,7 @@ function App() {
           element={<PositionWeRecurit />}
           exact
         />
+      <Route path="/contact" element={<Contact />} exact />
       </Routes>
     </BrowserRouter>
   );
