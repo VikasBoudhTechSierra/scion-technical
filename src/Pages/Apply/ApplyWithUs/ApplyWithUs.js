@@ -1,9 +1,122 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../../Components/Header/Header";
 import Footer from "../../../Components/Footer/Footer";
 import "./ApplyWithUs.css";
 
 const ApplyWithUs = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    location: "",
+    availablePosition: "",
+    annualSalary: "",
+    positionTitle: "",
+    LikeToShare: "",
+  });
+
+  const [file, setFiles] = useState({
+    uploadResume: "",
+    coverLetter: "",
+    additionalInfo: "",
+  });
+
+  const [radio, setRadio] = useState({
+    authorizedToWork: "",
+    relocation: "",
+    futureOpportunities: "",
+  });
+
+  const [checkbox, setCheckbox] = useState({
+    partTime: false,
+    fullTime: false,
+    interestedTime: false,
+  });
+
+  const {
+    firstName,
+    lastName,
+    email,
+    phone,
+    location,
+    availablePosition,
+    annualSalary,
+    positionTitle,
+    LikeToShare,
+  } = formData;
+
+  const handleOnChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleOnFiles = (event) => {
+    const { name, files } = event.target;
+    setFiles({ ...file, [name]: files });
+  };
+
+  const handleOnRadio = (event) => {
+    const { name, value } = event.target;
+    setRadio({ ...radio, [name]: value });
+  };
+
+  const handleOnChecked = (event) => {
+    const { name, checked } = event.target;
+    setCheckbox({ ...checkbox, [name]: checked });
+  };
+
+  const handleOnSubmit = (event) => {
+    event.preventDefault();
+    console.log(
+      firstName,
+      lastName,
+      email,
+      phone,
+      location,
+      availablePosition,
+      annualSalary,
+      positionTitle,
+      LikeToShare,
+      file.uploadResume,
+      file.coverLetter,
+      file.additionalInfo,
+      radio.authorizedToWork,
+      radio.futureOpportunities,
+      radio.relocation,
+      checkbox.fullTime,
+      checkbox.interestedTime,
+      checkbox.partTime
+    );
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      location: "",
+      availablePosition: "",
+      annualSalary: "",
+      positionTitle: "",
+      LikeToShare: "",
+    });
+    setCheckbox({
+      partTime: false,
+      fullTime: false,
+      interestedTime: false,
+    });
+    setFiles({
+      uploadResume: "",
+      coverLetter: "",
+      additionalInfo: "",
+    });
+    setFiles({
+      authorizedToWork: "",
+      relocation: "",
+      futureOpportunities: "",
+    });
+  };
+
   return (
     <div>
       <div className="header-container">
@@ -17,7 +130,7 @@ const ApplyWithUs = () => {
           <h5>
             <span>quick registration</span>
           </h5>
-          <form>
+          <form onSubmit={handleOnSubmit}>
             <div className="apply-form-group">
               <div className="input-group">
                 <label htmlFor="firstName">first name</label>
@@ -26,6 +139,8 @@ const ApplyWithUs = () => {
                   name="firstName"
                   id="firstName"
                   placeholder="Enter First Name"
+                  value={formData.firstName}
+                  onChange={handleOnChange}
                 />
               </div>
               <div className="input-group">
@@ -35,6 +150,8 @@ const ApplyWithUs = () => {
                   name="lastName"
                   id="lastName"
                   placeholder="Enter Last Name"
+                  value={formData.lastName}
+                  onChange={handleOnChange}
                 />
               </div>
             </div>
@@ -47,6 +164,8 @@ const ApplyWithUs = () => {
                   name="email"
                   id="email"
                   placeholder="Enter Email ID"
+                  value={formData.email}
+                  onChange={handleOnChange}
                 />
               </div>
               <div className="input-group">
@@ -56,6 +175,8 @@ const ApplyWithUs = () => {
                   name="phone"
                   id="phone"
                   placeholder="Enter Phone Number"
+                  value={formData.phone}
+                  onChange={handleOnChange}
                 />
               </div>
             </div>
@@ -68,6 +189,8 @@ const ApplyWithUs = () => {
                   name="location"
                   id="location"
                   placeholder="Location You Are Seeking Work"
+                  value={formData.location}
+                  onChange={handleOnChange}
                 />
               </div>
               <div className="input-group">
@@ -79,6 +202,8 @@ const ApplyWithUs = () => {
                   name="availablePosition"
                   id="availablePosition"
                   placeholder="Enter Available Position"
+                  value={formData.availablePosition}
+                  onChange={handleOnChange}
                 />
               </div>
             </div>
@@ -86,7 +211,12 @@ const ApplyWithUs = () => {
             <div className="apply-form-group">
               <div className="input-group">
                 <label htmlFor="uploadResume">Please Upload Your Resume</label>
-                <input type="file" name="uploadResume" id="uploadResume" />
+                <input
+                  type="file"
+                  name="uploadResume"
+                  id="uploadResume"
+                  onChange={handleOnFiles}
+                />
               </div>
 
               <div className="input-group">
@@ -96,6 +226,8 @@ const ApplyWithUs = () => {
                   placeholder="Please Enter a Number"
                   name="annualSalary"
                   id="annualSalary"
+                  value={formData.annualSalary}
+                  onChange={handleOnChange}
                 />
               </div>
             </div>
@@ -105,18 +237,35 @@ const ApplyWithUs = () => {
                 <label htmlFor="coverLetter">
                   Upload Your Cover Letter (Optional)
                 </label>
-                <input type="file" name="coverLetter" id="coverLetter" />
+                <input
+                  type="file"
+                  name="coverLetter"
+                  id="coverLetter"
+                  onChange={handleOnFiles}
+                />
               </div>
               <div className="input-group">
                 <label htmlFor="work-type">
                   Are You Looking for Full-Time or Part-Time Work?
                 </label>
-                <label htmlFor="part-time">
-                  <input type="checkbox" name="part-time" id="part-time" />
+                <label htmlFor="partTime">
+                  <input
+                    type="checkbox"
+                    name="partTime"
+                    id="partTime"
+                    checked={checkbox.partTime}
+                    onChange={handleOnChecked}
+                  />
                   part-time
                 </label>
-                <label htmlFor="full-time">
-                  <input type="checkbox" name="full-time" id="full-time" />
+                <label htmlFor="fullTime">
+                  <input
+                    type="checkbox"
+                    name="fullTime"
+                    id="fullTime"
+                    checked={checkbox.fullTime}
+                    onChange={handleOnChecked}
+                  />
                   full-time
                 </label>
               </div>
@@ -124,10 +273,15 @@ const ApplyWithUs = () => {
 
             <div className="apply-form-group">
               <div className="input-group">
-                <label htmlFor="coverLetter">
+                <label htmlFor="additionalInfo">
                   Upload Additional Information/Work Samples (Optional)
                 </label>
-                <input type="file" name="coverLetter" id="coverLetter" />
+                <input
+                  type="file"
+                  name="additionalInfo"
+                  id="additionalInfo"
+                  onChange={handleOnFiles}
+                />
               </div>
               <div className="input-group">
                 <label htmlFor="work-type">
@@ -136,16 +290,22 @@ const ApplyWithUs = () => {
                 <label htmlFor="authorizedToWork-yes">
                   <input
                     type="radio"
-                    name="relocation"
+                    name="authorizedToWork"
                     id="authorizedToWork-yes"
+                    value="yes"
+                    checked={radio.authorizedToWork === "yes"}
+                    onChange={handleOnRadio}
                   />
                   yes
                 </label>
                 <label htmlFor="authorizedToWork-no">
                   <input
                     type="radio"
-                    name="relocation"
+                    name="authorizedToWork"
                     id="authorizedToWork-no"
+                    value="no"
+                    checked={radio.authorizedToWork === "no"}
+                    onChange={handleOnRadio}
                   />
                   no
                 </label>
@@ -156,11 +316,25 @@ const ApplyWithUs = () => {
               <div className="input-group">
                 <label htmlFor="relocation">Are You Open to Relocation?</label>
                 <label htmlFor="relocation-yes">
-                  <input type="radio" name="relocation" id="relocation-yes" />
+                  <input
+                    type="radio"
+                    name="relocation"
+                    id="relocation-yes"
+                    value="yes"
+                    checked={radio.relocation === "yes"}
+                    onChange={handleOnRadio}
+                  />
                   yes
                 </label>
                 <label htmlFor="relocation-no">
-                  <input type="radio" name="relocation" id="relocation-no" />
+                  <input
+                    type="radio"
+                    name="relocation"
+                    id="relocation-no"
+                    value="no"
+                    checked={radio.relocation === "no"}
+                    onChange={handleOnRadio}
+                  />
                   no
                 </label>
               </div>
@@ -174,6 +348,9 @@ const ApplyWithUs = () => {
                     type="radio"
                     name="futureOpportunities"
                     id="futureOpportunities-yes"
+                    value="yes"
+                    checked={radio.futureOpportunities === "yes"}
+                    onChange={handleOnRadio}
                   />
                   yes
                 </label>
@@ -182,6 +359,9 @@ const ApplyWithUs = () => {
                     type="radio"
                     name="futureOpportunities"
                     id="futureOpportunities-no"
+                    value="no"
+                    checked={radio.futureOpportunities === "no"}
+                    onChange={handleOnRadio}
                   />
                   no
                 </label>
@@ -198,6 +378,8 @@ const ApplyWithUs = () => {
                   name="positionTitle"
                   id="positionTitle"
                   placeholder="Interested Positions"
+                  value={formData.positionTitle}
+                  onChange={handleOnChange}
                 />
               </div>
             </div>
@@ -211,6 +393,8 @@ const ApplyWithUs = () => {
                   rows={8}
                   name="LikeToShare"
                   id="LikeToShare"
+                  value={formData.LikeToShare}
+                  onChange={handleOnChange}
                 ></textarea>
               </div>
             </div>
@@ -220,11 +404,13 @@ const ApplyWithUs = () => {
                 <label htmlFor="positionTitle">
                   I am interested in learning of new job opportunities.
                 </label>
-                <label htmlFor="interested-time">
+                <label htmlFor="interestedTime">
                   <input
                     type="checkbox"
-                    name="interested-time"
-                    id="interested-time"
+                    name="interestedTime"
+                    id="interestedTime"
+                    checked={checkbox.interestedTime}
+                    onChange={handleOnChecked}
                   />
                   yes
                 </label>
