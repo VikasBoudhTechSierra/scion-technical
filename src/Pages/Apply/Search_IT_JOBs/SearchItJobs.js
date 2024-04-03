@@ -327,36 +327,36 @@ const SearchItJobs = () => {
     Puducherry: ["Puducherry", "Karaikal", "Yanam", "Mahe"],
   };
 
-  const categories = [
-    "Administrative",
-    "Architecture",
-    "Communication/PR",
-    "Construction Management",
-    "Creative",
-    "Architecture",
-    "Customer Service/Call Center",
-    "Education",
-    "Engineering",
-    "Executive Level",
-    " Finance/Accounting",
-    "Fundraising/Development",
-    " Healthcare/Medical",
-    "Hospitality",
-    "Human Resources",
-    " Industrial/General Labor",
-    "Information Technology",
-    " Legal/Government",
-    "Marketing",
-    "Media",
-    "Nonprofit Program(s)",
-    "Operations",
-    " Other",
-    "Project Management",
-    "Research/BioPharma",
-    " Sales/Business Development",
-    " Scientific/Environmental",
-    " Tech Sierra Careers",
-  ];
+  // const categories = [
+  //   "Administrative",
+  //   "Architecture",
+  //   "Communication/PR",
+  //   "Construction Management",
+  //   "Creative",
+  //   "Architecture",
+  //   "Customer Service/Call Center",
+  //   "Education",
+  //   "Engineering",
+  //   "Executive Level",
+  //   " Finance/Accounting",
+  //   "Fundraising/Development",
+  //   " Healthcare/Medical",
+  //   "Hospitality",
+  //   "Human Resources",
+  //   " Industrial/General Labor",
+  //   "Information Technology",
+  //   " Legal/Government",
+  //   "Marketing",
+  //   "Media",
+  //   "Nonprofit Program(s)",
+  //   "Operations",
+  //   " Other",
+  //   "Project Management",
+  //   "Research/BioPharma",
+  //   " Sales/Business Development",
+  //   " Scientific/Environmental",
+  //   " Tech Sierra Careers",
+  // ];
 
   const jobTitles = [
     "Software Engineer",
@@ -523,7 +523,9 @@ const SearchItJobs = () => {
               </button>
             </div>
             <div className="leftCheckBoxContainer">
-              <h3>Job Titles</h3>
+              <h3>Categories</h3>
+              <button className="checkbtn">Check All</button>
+              <button className="checkbtn">Uncheck All</button>
               {/* Generate checkboxes for each job title */}
               {jobTitles.map((jobTitle, index) => (
                 <div key={index} className="checkbox">
