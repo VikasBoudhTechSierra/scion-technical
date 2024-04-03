@@ -15,7 +15,7 @@ const SearchItJobs = () => {
   const [locationRequirements, setLocationRequirements] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [checkedItems, setCheckedItems] = useState({});
-  const [searchText, setSearchText] = useState("");
+  // const [searchText, setSearchText] = useState("");
 
   //states of india
   const states = [
@@ -417,6 +417,7 @@ const SearchItJobs = () => {
   };
 
   return (
+    <>
     <div className="searchItJobs wrapper">
       <Header />
       <TemporaryStuffingHeading
@@ -550,8 +551,9 @@ const SearchItJobs = () => {
           </ul>
         </div>
       </div>
-      <Footer />
     </div>
+    <Footer />
+    </>
   );
 };
 
