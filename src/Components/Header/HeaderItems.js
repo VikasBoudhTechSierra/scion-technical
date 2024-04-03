@@ -13,7 +13,7 @@ export const NavItems = [
   },
   {
     id: 3,
-    title: "permenrnt placement",
+    title: "permanent placement",
     cName: "nav-item",
     path: "/temporary-staffing/start-up",
   },

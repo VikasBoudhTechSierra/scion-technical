@@ -15,7 +15,7 @@ const SearchItJobs = () => {
   const [locationRequirements, setLocationRequirements] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [checkedItems, setCheckedItems] = useState({});
-  // const [searchText, setSearchText] = useState("");
+  const [filteredJobs, setFilteredJobs] = useState(jobs);
 
   //states of india
   const states = [
@@ -358,6 +358,13 @@ const SearchItJobs = () => {
     " Tech Sierra Careers",
   ];
 
+  const jobTitles = [
+    "Software Engineer",
+    "Data Analyst",
+    "Project Manager",
+    "UI/UX Designer",
+  ];
+
   // Reset city selection when the state changes
   const handleStateChange = (event) => {
     setSelectedState(event.target.value);
@@ -376,26 +383,24 @@ const SearchItJobs = () => {
   // Function to handle checkbox change
   const handleCheckboxChange = (event) => {
     const { name, checked } = event.target;
-    setCheckedItems({ ...checkedItems, [name]: checked });
+    setCheckedItems((prevCheckedItems) => ({
+      ...prevCheckedItems,
+      [name]: checked,
+    }));
   };
 
   //just for console data
   const handleSearch = () => {
-    console.log("Search button clicked");
-    console.log("Keyword:", keyword);
-    console.log("Employment Type:", employmentType);
-    console.log("Location Requirements:", locationRequirements);
-    console.log("State:", selectedState);
-    console.log("City:", selectedCity);
-    // You can perform search operations here
+    // Filter jobs based on selected location and keyword
+    const filteredJobs = jobs.filter(
+      (job) =>
+        job.state === selectedState &&
+        job.city === selectedCity &&
+        job.title.toLowerCase().includes(keyword.toLowerCase())
+    );
 
-    // Filter jobs based on selected location
-    const filteredJobs = jobs.filter((job) => job.location === selectedCity);
-
-    // Log filtered jobs for testing
-    console.log("Filtered Jobs:", filteredJobs);
-
-    // You can update state or perform further operations with filteredJobs
+    // Set the filtered jobs state
+    setFilteredJobs(filteredJobs);
   };
 
   const cityOptions = getCityOptions();
@@ -403,17 +408,40 @@ const SearchItJobs = () => {
   // Pagination logic
   const indexOfLastJob = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstJob = indexOfLastJob - ITEMS_PER_PAGE;
-  const currentJobs = jobs.slice(indexOfFirstJob, indexOfLastJob);
+  const currentJobs = filteredJobs.slice(indexOfFirstJob, indexOfLastJob);
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   // checkbox search function
+  // const handleSearchButtonClick = () => {
+  //   const checkedJobTitles = Object.keys(checkedItems).filter(
+  //     (jobTitle) => checkedItems[jobTitle]
+  //   );
+  //   console.log("Checked job titles:", checkedJobTitles);
+  // };
+
   const handleSearchButtonClick = () => {
-    const checkedCategories = Object.keys(checkedItems).filter(
-      (category) => checkedItems[category]
+    // Filter jobs based on selected location and keyword
+    const filteredJobs = jobs.filter(
+      (job) =>
+        job.state === selectedState &&
+        job.city === selectedCity &&
+        job.title.toLowerCase().includes(keyword.toLowerCase())
     );
-    console.log("Checked categories:", checkedCategories);
+
+    // Filter the filtered jobs based on checked job titles
+    const checkedJobTitles = Object.keys(checkedItems).filter(
+      (jobTitle) => checkedItems[jobTitle]
+    );
+
+    // Filter the already filtered jobs based on checked job titles
+    const filteredJobsWithCheckedTitles = filteredJobs.filter((job) =>
+      checkedJobTitles.includes(job.title)
+    );
+
+    // Set the filtered jobs state
+    setFilteredJobs(filteredJobsWithCheckedTitles);
   };
 
   return (
@@ -488,34 +516,26 @@ const SearchItJobs = () => {
               </div>
               <button
                 className="searchBtn"
-                disabled={
-                  !selectedState || !selectedCity
-                  //  ||
-                  // !employmentType ||
-                  // !locationRequirements
-                }
+                disabled={!selectedState || !selectedCity}
                 onClick={handleSearch}
               >
                 Search
               </button>
             </div>
             <div className="leftCheckBoxContainer">
-              <h3>Categories</h3>
-              <button className="checkbtn">Check All</button>
-              <button className="checkbtn">Uncheck All</button>
-              {/* Generate checkboxes for each category */}
-              {categories.map((category, index) => (
-                <div key={category} className="checkbox">
+              <h3>Job Titles</h3>
+              {/* Generate checkboxes for each job title */}
+              {jobTitles.map((jobTitle, index) => (
+                <div key={index} className="checkbox">
                   <input
                     type="checkbox"
-                    name={category}
-                    checked={checkedItems[category] || false}
+                    name={jobTitle}
+                    checked={checkedItems[jobTitle] || false}
                     onChange={handleCheckboxChange}
                   />
-                  <label>{category}</label>
+                  <label>{jobTitle}</label>
                 </div>
               ))}
-
               <button className="searchBtn" onClick={handleSearchButtonClick}>
                 Search
               </button>
@@ -523,21 +543,26 @@ const SearchItJobs = () => {
           </div>
           <div className="searchItJobsRight">
             <div className="rightBoxContainer">
-              {currentJobs.map((job, index) => (
-                <div className="searchItJobRightBox" key={index}>
-                  <h3>{job.title}</h3>
-                  <p>
-                    <strong>Location: </strong> {job.state} , {jobs.city}
-                  </p>
-                  <p>{job.description}</p>
-                  <button>LEARN MORE</button>
-                </div>
-              ))}
+              {/* Map over filtered jobs and render each job */}
+              {filteredJobs.length > 0 ? (
+                currentJobs.map((job, index) => (
+                  <div className="searchItJobRightBox" key={index}>
+                    <h3>{job.title}</h3>
+                    <p>
+                      <strong>Location: </strong> {job.state}, {job.city}
+                    </p>
+                    <p>{job.description}</p>
+                    <button>LEARN MORE</button>
+                  </div>
+                ))
+              ) : (
+                <p>No jobs found</p>
+              )}
             </div>
             {/* Pagination */}
             <ul className="pagination">
               {Array.from({
-                length: Math.ceil(jobs.length / ITEMS_PER_PAGE),
+                length: Math.ceil(filteredJobs.length / ITEMS_PER_PAGE),
               }).map((_, index) => (
                 <li key={index} className="page-item">
                   <button
