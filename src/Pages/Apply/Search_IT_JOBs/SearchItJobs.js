@@ -500,11 +500,11 @@ const SearchItJobs = () => {
           </div>
           <div className="leftCheckBoxContainer">
             <h3>Categories</h3>
-            <button>Check All</button>
+            <button className="checkbtn">Check All</button>
             <button>Uncheck All</button>
             {/* Generate checkboxes for each category */}
             {categories.map((category, index) => (
-              <div key={category}>
+              <div key={category} className="checkbox">
                 <input
                   type="checkbox"
                   name={category}
@@ -515,7 +515,9 @@ const SearchItJobs = () => {
               </div>
             ))}
 
-            <button onClick={handleSearchButtonClick}>Search</button>
+            <button className="searchBtn" onClick={handleSearchButtonClick}>
+              Search
+            </button>
           </div>
         </div>
         <div className="searchItJobsRight">
