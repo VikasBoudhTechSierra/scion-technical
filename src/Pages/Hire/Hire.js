@@ -195,7 +195,7 @@ const Hire = () => {
                       <option value="mercedes">Executive Search</option>
                       <option value="audi">Payrolling</option>
                       <option value="audi">
-                        Apply With US As A Candidate{" "}
+                        Apply With India As A Candidate{" "}
                       </option>
                     </select>
                   </div>
@@ -210,7 +210,7 @@ const Hire = () => {
                       <option value="mercedes">Executive Search</option>
                       <option value="audi">Payrolling</option>
                       <option value="audi">
-                        Apply With US As A Candidate{" "}
+                        Apply With India As A Candidate{" "}
                       </option>
                     </select>
                   </div>
