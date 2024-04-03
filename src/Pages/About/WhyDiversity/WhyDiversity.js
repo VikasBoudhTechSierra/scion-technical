@@ -386,8 +386,10 @@ const WhyDiversity = () => {
             </div>
           </div>
 
-          <div class="diversity_section_btm_container">
-            <h2 class="diversity_section_main_title">Additional Resources</h2>
+          <div className="diversity_section_btm_container">
+            <h2 className="diversity_section_main_title">
+              Additional Resources
+            </h2>
 
             <ul className="diversity_section_btm_links">
               <li>

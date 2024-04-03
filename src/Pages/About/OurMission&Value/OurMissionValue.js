@@ -106,7 +106,7 @@ const OurMissionValue = () => {
                   Ready to launch your search?
                 </span>
                 <p>
-                  <a class="employer_cta_button" href="/contact-us">
+                  <a className="employer_cta_button" href="/contact-us">
                     Connect With Us
                   </a>
                 </p>
@@ -119,8 +119,8 @@ const OurMissionValue = () => {
               />
             </div>
           </div>
-          <div class="mission-section-btm-container">
-            <h2 class="section-main-title">Learn More About TechSierra</h2>
+          <div className="mission-section-btm-container">
+            <h2 className="section-main-title">Learn More About TechSierra</h2>
 
             <ul className="mission-section-btm-links">
               <li>

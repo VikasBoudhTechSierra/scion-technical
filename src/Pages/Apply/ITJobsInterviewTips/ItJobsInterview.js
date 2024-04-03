@@ -167,8 +167,8 @@ const ITjobsInterview = () => {
               the very best tech talent.
             </p>
           </div>
-          <div class="ITjobs_section_btm_container">
-            <h2 class="ITjobs_section_main_title">
+          <div className="ITjobs_section_btm_container">
+            <h2 className="ITjobs_section_main_title">
               More Job Seeker Information
             </h2>
 
