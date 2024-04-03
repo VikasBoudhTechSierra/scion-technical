@@ -19,7 +19,7 @@ export const NavItems = [
   },
   { id: 4, title: "apply", cName: "nav-item", path: "#FIXME" },
   { id: 5, title: "hire", cName: "nav-item", path: "/hire" },
-  { id: 6, title: "contact", cName: "nav-item", path: "#FIXME" },
+  { id: 6, title: "contact", cName: "nav-item", path: "/contact" },
 ];
 
 export const applyDrop = [
