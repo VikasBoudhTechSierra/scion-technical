@@ -134,7 +134,7 @@ const Startup = () => {
               the expertise to connect you with the talented individuals who can
               drive your startup’s success.
             </p>
-            <a href="#FIXME" target="_self" class="startUp-las">
+            <a href="#FIXME" target="_self" className="startUp-las">
               Launch A Search
             </a>
           </div>

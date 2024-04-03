@@ -65,7 +65,7 @@ const Ai = () => {
               MainHeading="Introducing a World of AI Talent"
               paragraph1="At Tech Sierra Technology, we specialize in AI temporary staffing, connecting organizations with exceptional AI professionals who possess the skills and expertise to drive innovation and transform businesses. Our extensive network comprises individuals with diverse AI roles, from AI engineers and data scientists to machine learning experts and computer vision engineers. Whether you are seeking experts in natural language processing, deep learning, or robotics, our talent pool is rich with qualified candidates. We understand the importance of assembling the right team of AI professionals for your unique needs, and we are committed to helping you find the perfect fit to propel your organization forward in the world of artificial intelligence."
             />
-            <ul class="ai-job-list">
+            <ul className="ai-job-list">
               <li>AI Engineer</li>
               <li>Data Scientist (AI)</li>
               <li>Machine Learning Engineer</li>
@@ -87,7 +87,7 @@ const Ai = () => {
               <li>AI Solutions Architect</li>
               <li>AI Business Strategist</li>
             </ul>
-            <a href="#FIXME" target="_self" class="startUp-las">
+            <a href="#FIXME" target="_self" className="startUp-las">
               Launch A Search
             </a>
           </div>
