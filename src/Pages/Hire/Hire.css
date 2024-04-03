@@ -30,7 +30,7 @@
 
 .wrapper .crousel_container .crousel_card {
     width: 98% !important;
-    background: #CB722C;
+    background: #06a9ca;
     padding: 11% 0% 11% 0% !important;
     border-radius: 8%;
 
@@ -93,12 +93,12 @@
 }
 
 .custom-prev {
-    left: -50px;
+    left: -45px;
     top: 25%;
 }
 
 .custom-next {
-    right: -43px;
+    right: -40px;
     top: 25%;
 }
 
@@ -161,6 +161,11 @@
 
 }
 
+.form_container .input_container .input_field span{
+    color: #d90606;
+    font-weight: 700;
+}
+
 .form_container .input_container .input_field .file_field {
     border: none;
 }
@@ -195,6 +200,11 @@
 
 }
 
+.input_container .textare_field{
+    color: #d90606;
+    font-weight: 700;
+}
+
 .input_container .input_field select {
     width: 95.8%;
     height: 38px;
@@ -223,7 +233,7 @@
 }
 
 .form_container .btn button:hover {
-    color: #CB722C;
+    color: #06a9ca;
 }
 
 .hire_section_main_title {
