@@ -8,8 +8,10 @@
   width: 100%;
   padding: 2% 0;
   text-align: center;
-  background: url("../../Assets/Images/Contact/Contact-header.jpg");
-  background-position: bottom;
+  background-image: url(../../Assets/Images/Apply/HowToApplyBG.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
   color: #fff;
 }
 
