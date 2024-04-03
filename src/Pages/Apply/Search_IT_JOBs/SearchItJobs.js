@@ -418,143 +418,143 @@ const SearchItJobs = () => {
 
   return (
     <>
-    <div className="searchItJobs wrapper">
-      <Header />
-      <TemporaryStuffingHeading
-        h1={["Search IT Jobs & Apply Online"]}
-        h3={[
-          " Find Your Dream Technology Job with Tech Sierra Technology Staffing",
-        ]}
-      />
-      <div className="searchItJobsContainer">
-        <div className="searchItJobsLeft">
-          <div className="searchItJobsDropdown">
-            <div className="custom-select employmentType">
-              <input
-                placeholder="Keyword"
-                label="Keyword"
-                value={keyword}
-                onChange={(e) => {
-                  setKeyword(e.target.value);
-                }}
-              />
-            </div>
-            <div className="custom-select employmentType">
-              <select
-                value={employmentType}
-                onChange={(e) => setEmploymentType(e.target.value)}
-              >
-                <option value="">Employment Type:</option>
-                <option value="Contract">Contract</option>
-                <option value="Contract To Hire">Contract To Hire</option>
-                <option value="Direct Hire">Direct Hire</option>
-                <option value="Retained">Retained</option>
-              </select>
-            </div>
-            <div className="custom-select locationRequirements">
-              <select
-                value={locationRequirements}
-                onChange={(e) => setLocationRequirements(e.target.value)}
-              >
-                <option value="">Location Required</option>
-                <option value="Hibrid">Hybrid</option>
-                <option value="On-Site">On-Site</option>
-                <option value="Remote">Remote</option>
-              </select>
-            </div>
-            <div className="custom-select state">
-              <select value={selectedState} onChange={handleStateChange}>
-                {states.map((state, index) => (
-                  <option key={index} value={state}>
-                    {state}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="custom-select city">
-              <select
-                value={selectedCity}
-                onChange={handleCityChange}
-                disabled={!selectedState} // Disable city dropdown until a state is selected
-              >
-                <option value="">Select City</option>
-                {selectedState !== "" &&
-                  cityOptions.map((city, index) => (
-                    <option key={index} value={city}>
-                      {city}
+      <div className="searchItJobs wrapper">
+        <Header />
+        <TemporaryStuffingHeading
+          h1={["Search IT Jobs & Apply Online"]}
+          h3={[
+            " Find Your Dream Technology Job with Tech Sierra Technology Staffing",
+          ]}
+        />
+        <div className="searchItJobsContainer">
+          <div className="searchItJobsLeft">
+            <div className="searchItJobsDropdown">
+              <div className="custom-select employmentType">
+                <input
+                  placeholder="Keyword"
+                  label="Keyword"
+                  value={keyword}
+                  onChange={(e) => {
+                    setKeyword(e.target.value);
+                  }}
+                />
+              </div>
+              <div className="custom-select employmentType">
+                <select
+                  value={employmentType}
+                  onChange={(e) => setEmploymentType(e.target.value)}
+                >
+                  <option value="">Employment Type:</option>
+                  <option value="Contract">Contract</option>
+                  <option value="Contract To Hire">Contract To Hire</option>
+                  <option value="Direct Hire">Direct Hire</option>
+                  <option value="Retained">Retained</option>
+                </select>
+              </div>
+              <div className="custom-select locationRequirements">
+                <select
+                  value={locationRequirements}
+                  onChange={(e) => setLocationRequirements(e.target.value)}
+                >
+                  <option value="">Location Required</option>
+                  <option value="Hibrid">Hybrid</option>
+                  <option value="On-Site">On-Site</option>
+                  <option value="Remote">Remote</option>
+                </select>
+              </div>
+              <div className="custom-select state">
+                <select value={selectedState} onChange={handleStateChange}>
+                  {states.map((state, index) => (
+                    <option key={index} value={state}>
+                      {state}
                     </option>
                   ))}
-              </select>
-            </div>
-            <button
-              className="searchBtn"
-              disabled={
-                !selectedState || !selectedCity
-                //  ||
-                // !employmentType ||
-                // !locationRequirements
-              }
-              onClick={handleSearch}
-            >
-              Search
-            </button>
-          </div>
-          <div className="leftCheckBoxContainer">
-            <h3>Categories</h3>
-            <button className="checkbtn">Check All</button>
-            <button>Uncheck All</button>
-            {/* Generate checkboxes for each category */}
-            {categories.map((category, index) => (
-              <div key={category} className="checkbox">
-                <input
-                  type="checkbox"
-                  name={category}
-                  checked={checkedItems[category] || false}
-                  onChange={handleCheckboxChange}
-                />
-                <label>{category}</label>
+                </select>
               </div>
-            ))}
-
-            <button className="searchBtn" onClick={handleSearchButtonClick}>
-              Search
-            </button>
-          </div>
-        </div>
-        <div className="searchItJobsRight">
-          <div className="rightBoxContainer">
-            {currentJobs.map((job, index) => (
-              <div className="searchItJobRightBox" key={index}>
-                <h3>{job.title}</h3>
-                <p>
-                  <strong>Location: </strong> {job.state} , {jobs.city}
-                </p>
-                <p>{job.description}</p>
-                <button>LEARN MORE</button>
-              </div>
-            ))}
-          </div>
-          {/* Pagination */}
-          <ul className="pagination">
-            {Array.from({
-              length: Math.ceil(jobs.length / ITEMS_PER_PAGE),
-            }).map((_, index) => (
-              <li key={index} className="page-item">
-                <button
-                  onClick={() => paginate(index + 1)}
-                  className={`page-link ${
-                    currentPage === index + 1 ? "selected" : ""
-                  }`}
+              <div className="custom-select city">
+                <select
+                  value={selectedCity}
+                  onChange={handleCityChange}
+                  disabled={!selectedState} // Disable city dropdown until a state is selected
                 >
-                  {index + 1}
-                </button>
-              </li>
-            ))}
-          </ul>
+                  <option value="">Select City</option>
+                  {selectedState !== "" &&
+                    cityOptions.map((city, index) => (
+                      <option key={index} value={city}>
+                        {city}
+                      </option>
+                    ))}
+                </select>
+              </div>
+              <button
+                className="searchBtn"
+                disabled={
+                  !selectedState || !selectedCity
+                  //  ||
+                  // !employmentType ||
+                  // !locationRequirements
+                }
+                onClick={handleSearch}
+              >
+                Search
+              </button>
+            </div>
+            <div className="leftCheckBoxContainer">
+              <h3>Categories</h3>
+              <button className="checkbtn">Check All</button>
+              <button className="checkbtn">Uncheck All</button>
+              {/* Generate checkboxes for each category */}
+              {categories.map((category, index) => (
+                <div key={category} className="checkbox">
+                  <input
+                    type="checkbox"
+                    name={category}
+                    checked={checkedItems[category] || false}
+                    onChange={handleCheckboxChange}
+                  />
+                  <label>{category}</label>
+                </div>
+              ))}
+
+              <button className="searchBtn" onClick={handleSearchButtonClick}>
+                Search
+              </button>
+            </div>
+          </div>
+          <div className="searchItJobsRight">
+            <div className="rightBoxContainer">
+              {currentJobs.map((job, index) => (
+                <div className="searchItJobRightBox" key={index}>
+                  <h3>{job.title}</h3>
+                  <p>
+                    <strong>Location: </strong> {job.state} , {jobs.city}
+                  </p>
+                  <p>{job.description}</p>
+                  <button>LEARN MORE</button>
+                </div>
+              ))}
+            </div>
+            {/* Pagination */}
+            <ul className="pagination">
+              {Array.from({
+                length: Math.ceil(jobs.length / ITEMS_PER_PAGE),
+              }).map((_, index) => (
+                <li key={index} className="page-item">
+                  <button
+                    onClick={() => paginate(index + 1)}
+                    className={`page-link ${
+                      currentPage === index + 1 ? "selected" : ""
+                    }`}
+                  >
+                    {index + 1}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <Footer />
+      <Footer />
     </>
   );
 };
