@@ -93,7 +93,7 @@ const Hire = () => {
               <div className="itLeftContainer">
                 <TemporaryStuffingParaSection
                   paragraph1="Tech Sierra Technology is a leading recruitment firm for tech-based employers. Specializing in executive search, direct hire, and contract roles across tech, engineering, creative, marketing, sales, and IT. Our passionate recruiters connect clients with top talent locally and nationally since 2006."
-                  paragraph2="With an extensive network of premier, experienced, diverse, and innovative candidates, we’re equipped to meet your unique hiring needs. Our recruiting offices span the nation, ensuring comprehensive coverage of all US locations and markets for technology positions."
+                  paragraph2="With an extensive network of premier, experienced, diverse, and innovative candidates, we’re equipped to meet your unique hiring needs. Our recruiting offices span the nation, ensuring comprehensive coverage of all India Locations and markets for technology positions."
                 />
               </div>
 

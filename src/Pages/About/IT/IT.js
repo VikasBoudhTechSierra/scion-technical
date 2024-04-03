@@ -21,7 +21,7 @@ const IT = () => {
         <TemporaryStuffingHeading
           h1={["Temporary IT Technology Staffing Services"]}
           h3={[
-            "Hire The Best IT Technology Staff On The Market For Your Team! We Staff All US Locations and Remote Roles!",
+            "Hire The Best IT Technology Staff On The Market For Your Team! We Staff All India Locations and Remote Roles!",
           ]}
         />
 

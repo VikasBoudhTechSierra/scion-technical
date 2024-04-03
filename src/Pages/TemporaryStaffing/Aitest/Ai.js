@@ -18,7 +18,7 @@ const Ai = () => {
       </div>
       <div className="itContainer wrapper ai-ctn">
         <TemporaryStuffingHeading
-          h1={["Award-Winning AI Staffing Agency for All US Locations"]}
+          h1={["Award-Winning AI Staffing Agency for All India Locations"]}
           h3={[
             "Discover the Future of AI Innovation with Our Expert AI (Artificial Intelligence) Professionals for Interim and Temporary Staffing Needs.",
           ]}

@@ -19,7 +19,7 @@ const Startup = () => {
       </div>
       <div className="itContainer wrapper startUp-ctn">
         <TemporaryStuffingHeading
-          h1={["Award-Winning Startup Staffing Agency for All US Locations"]}
+          h1={["Award-Winning Startup Staffing Agency for All India Locations"]}
           h3={[
             "Where innovation meets talent: your Startup’s staffing solution. Nationally recognized, Tech Sierra Technology provides top staffing services for Startups.",
           ]}
