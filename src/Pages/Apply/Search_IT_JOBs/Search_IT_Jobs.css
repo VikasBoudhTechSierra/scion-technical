@@ -133,11 +133,25 @@
   margin: 10px 0px 10px;
 }
 
-.leftCheckBoxContainer button {
-  padding: 8px;
+.leftCheckBoxContainer .checkbtn {
+  padding: 10px;
   margin: 5px 10px 0px 0px;
   cursor: pointer;
   background-color: #06a9ca;
   color: #ffffff;
   border: none;
+}
+
+.leftCheckBoxContainer .searchBtn {
+  padding: 10px;
+  width: 90%;
+  margin: 30px 10px 0px 0px;
+  cursor: pointer;
+  background-color: #06a9ca;
+  color: #ffffff;
+  border: none;
+}
+
+.checkbox {
+  margin-top: 15px;
 }
