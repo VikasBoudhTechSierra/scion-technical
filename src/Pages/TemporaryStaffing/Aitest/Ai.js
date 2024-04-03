@@ -18,7 +18,7 @@ const Ai = () => {
       </div>
       <div className="itContainer wrapper ai-ctn">
         <TemporaryStuffingHeading
-          h1={["Award-Winning AI Staffing Agency for All US Locations"]}
+          h1={["Award-Winning AI Staffing Agency for All India Locations"]}
           h3={[
             "Discover the Future of AI Innovation with Our Expert AI (Artificial Intelligence) Professionals for Interim and Temporary Staffing Needs.",
           ]}
@@ -27,15 +27,15 @@ const Ai = () => {
           <div className="itLeftContainer">
             <TemporaryStuffingParaSection
               MainHeading="Hire Top AI Talent Fast"
-              paragraph1="Our team at Scion Technology delivers exceptional AI (Artificial Intelligence) staffing solutions that empower organizations like yours, with top-tier AI talent. In today’s tech landscape, utilizing AI has become crucial for businesses to succeed in a competitive and evolving market. Our staffing services and recruitment process are meticulously designed to connect you with highly skilled AI professionals who can drive innovation, optimize processes, and unlock new growth opportunities for your organization."
+              paragraph1="Our team at Tech Sierra Technology delivers exceptional AI (Artificial Intelligence) staffing solutions that empower organizations like yours, with top-tier AI talent. In today’s tech landscape, utilizing AI has become crucial for businesses to succeed in a competitive and evolving market. Our staffing services and recruitment process are meticulously designed to connect you with highly skilled AI professionals who can drive innovation, optimize processes, and unlock new growth opportunities for your organization."
             />
             <TemporaryStuffingParaSection
               MainHeading="Our Distinctive Approach"
-              paragraph1="At Scion Technology, we utilize a comprehensive and personalized approach for our AI staffing agency. We understand that each organization has its own AI needs and strategic goals. Our recruiters and AI experts collaborate closely with you to fully understand your business needs, corporate culture, and technical requirements. This allows us to carefully identify and provide you with candidates who have the specific expertise, skills, and mindset needed to support your AI initiatives."
+              paragraph1="At Tech Sierra Technology, we utilize a comprehensive and personalized approach for our AI staffing agency. We understand that each organization has its own AI needs and strategic goals. Our recruiters and AI experts collaborate closely with you to fully understand your business needs, corporate culture, and technical requirements. This allows us to carefully identify and provide you with candidates who have the specific expertise, skills, and mindset needed to support your AI initiatives."
             />
             <TemporaryStuffingParaSection
               MainHeading="Access to Elite AI Professionals"
-              paragraph1="At Scion Technology, we have established a vast network of highly skilled AI professionals who are at the top of their game. Whether you are seeking exceptional AI engineers, data scientists, machine learning experts, or accomplished AI project managers, we have the extensive resources and connections to seamlessly connect you with the most suitable candidates. Our rigorous screening process guarantees that we present you with individuals who not only possess exceptional technical acumen but also align perfectly with your company values and aspirations."
+              paragraph1="At Tech Sierra Technology, we have established a vast network of highly skilled AI professionals who are at the top of their game. Whether you are seeking exceptional AI engineers, data scientists, machine learning experts, or accomplished AI project managers, we have the extensive resources and connections to seamlessly connect you with the most suitable candidates. Our rigorous screening process guarantees that we present you with individuals who not only possess exceptional technical acumen but also align perfectly with your company values and aspirations."
             />
             <TemporaryStuffingParaSection
               MainHeading="Streamlined Staffing Process"
@@ -63,7 +63,7 @@ const Ai = () => {
           <div className="itLeftContainer">
             <TemporaryStuffingParaSection
               MainHeading="Introducing a World of AI Talent"
-              paragraph1="At Scion Technology, we specialize in AI temporary staffing, connecting organizations with exceptional AI professionals who possess the skills and expertise to drive innovation and transform businesses. Our extensive network comprises individuals with diverse AI roles, from AI engineers and data scientists to machine learning experts and computer vision engineers. Whether you are seeking experts in natural language processing, deep learning, or robotics, our talent pool is rich with qualified candidates. We understand the importance of assembling the right team of AI professionals for your unique needs, and we are committed to helping you find the perfect fit to propel your organization forward in the world of artificial intelligence."
+              paragraph1="At Tech Sierra Technology, we specialize in AI temporary staffing, connecting organizations with exceptional AI professionals who possess the skills and expertise to drive innovation and transform businesses. Our extensive network comprises individuals with diverse AI roles, from AI engineers and data scientists to machine learning experts and computer vision engineers. Whether you are seeking experts in natural language processing, deep learning, or robotics, our talent pool is rich with qualified candidates. We understand the importance of assembling the right team of AI professionals for your unique needs, and we are committed to helping you find the perfect fit to propel your organization forward in the world of artificial intelligence."
             />
             <ul class="ai-job-list">
               <li>AI Engineer</li>
@@ -96,10 +96,10 @@ const Ai = () => {
           Are you ready to unlock the full potential of AI for your organization
           or startup? Our committed team is poised to help you build a talented
           and forward-thinking AI workforce that will drive exponential growth
-          and success for your organization. Experience the Scion Technology
-          advantage in AI staffing and recruitment – your trusted partner in
-          driving AI excellence. Contact us now to discuss your AI temporary
-          staffing needs.
+          and success for your organization. Experience the Tech Sierra
+          Technology advantage in AI staffing and recruitment – your trusted
+          partner in driving AI excellence. Contact us now to discuss your AI
+          temporary staffing needs.
         </p>
         <TemporaryStaffingAboveFooter
           bottomLinks={[

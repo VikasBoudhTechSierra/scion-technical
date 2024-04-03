@@ -71,7 +71,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <span>NATIONAL & REMOTE: </span>
-                  <p> All US cites and locations</p>
+                  <p> All India cites and locations</p>
                 </li>
               </ul>
             </div>

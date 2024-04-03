@@ -1,0 +1,108 @@
+.itJobs_main-container {
+  background-color: #f6f6f6;
+  font-family: Lato, sans-serif;
+}
+
+itJobs-heading h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.itjob-content {
+  background-image: url("https://sciontechnical.com/wp-content/uploads/sites/34/2024/02/iStock-1430161888.jpg");
+  background-size: cover;
+  padding: 5% 0;
+  margin-top: 5%
+}
+
+.itjob-content div {
+  
+  background-color: white;
+  opacity: 0.9;
+  width: 50%;
+  padding: 5% 2%;
+} 
+
+.itjob-content p {
+    color:#444;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.itjob-content h4 {
+    color:#06a9ca;
+    font-size: 18px;
+}
+
+.itjob-content h2 {
+    color:#000;
+    font-size: 22px;
+}
+
+.itjob-learn {
+  margin: 8% 0;
+}
+
+.itjob-technologyStaffing {
+  background-image: url("https://sciontechnical.com/wp-content/uploads/sites/34/2023/04/Awards-Banner-3.jpg");
+  width: 100%;
+  padding: 4%;
+  margin-bottom: 2%; 
+}
+
+.ITjobs_section_btm_container {
+  margin: 60px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ITjobs_section_main_title {
+  font-size: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+  
+.ITjobs_section_main_title::after, .ITjobs_section_main_title::before {
+    content: '';
+    display: block;
+    border: 7px solid #000;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    left: 50%;
+    position: absolute;
+    bottom: -14px;
+    margin-left: -4px;
+ }
+
+.ITjobs_section_main_title::before {
+    border: 8px solid transparent;
+    border-top-color: #000;
+    margin-left: -5px;
+    margin-bottom: -2px;
+}
+
+.ITjobs_section_main_title::after {
+    border-top-color: rgb(246, 246, 246) !important;
+}
+
+
+.ITjobs_section_btm_links {
+  display: flex;
+  flex-direction: column;
+}
+
+.ITjobs_section_btm_links li a {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  font-size: 20px;
+  padding: 0;
+  text-align: center;
+  color: #06a9ca;
+  text-transform: uppercase;
+}
