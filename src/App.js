@@ -13,7 +13,7 @@ import StartUp from "./Pages/TemporaryStaffing/StartUp/StartUp";
 import Ai from "./Pages/TemporaryStaffing/Aitest/Ai";
 import HowToApply from "./Pages/Apply/HowToApply/HowToApply";
 import ItJobsInterview from "./Pages/Apply/ITJobsInterviewTips/ItJobsInterview";
-import SearchItJobs from "./Pages/Apply/Search_IT_JOBs/SearchItJobs";
+import SearchItJobs from "./Pages/Apply/Search_IT_Jobs/SearchItJobs";
 import PositionWeRecurit from "./Pages/Apply/PositionWeRecurit/PositionWeRecurit";
 import ApplyWithUs from "./Pages/Apply/ApplyWithUs/ApplyWithUs";
 import Hire from "./Pages/Hire/Hire";
