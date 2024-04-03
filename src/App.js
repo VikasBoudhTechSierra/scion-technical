@@ -11,17 +11,19 @@ import IT from "./Pages/About/IT/IT";
 import ITSecurity from "./Pages/About/ITSecurity/ITSecurity";
 import StartUp from "./Pages/TemporaryStaffing/StartUp/StartUp";
 import Ai from "./Pages/TemporaryStaffing/Aitest/Ai";
-import Accounts from "./Pages/Apply/Accounts/Accounts";
 import HowToApply from "./Pages/Apply/HowToApply/HowToApply";
 import ItJobsInterview from "./Pages/Apply/ITJobsInterviewTips/ItJobsInterview";
-import SearchItJobs from "./Pages/Apply/Search_IT_JOBs/SearchItJobs";
+import SearchItJobs from "./Pages/Apply/Search_IT_Jobs/SearchItJobs";
 import PositionWeRecurit from "./Pages/Apply/PositionWeRecurit/PositionWeRecurit";
+import ApplyWithUs from "./Pages/Apply/ApplyWithUs/ApplyWithUs";
+import Hire from "./Pages/Hire/Hire";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/contact-us" element={<Contact />} exact />
+        <Route path="/hire" element={<Hire />} exact />
         <Route path="/about-us/blog-insight" element={<BlogInsight />} exact />
         <Route path="/about-us/our-clients" element={<OurClinets />} exact />
         <Route
@@ -47,7 +49,7 @@ function App() {
           exact
         />
         <Route path="/temporary-staffing/ai" element={<Ai />} exact />
-        <Route path="/apply/accounts" element={<Accounts />} exact />
+        <Route path="/apply/apply-with-us" element={<ApplyWithUs />} exact />
         <Route path="/apply/how-to-apply" element={<HowToApply />} exact />
         <Route path="/apply/it-jobs" element={<ItJobsInterview />} exact />
         <Route path="/apply/search-it-jobs" element={<SearchItJobs />} exact />
@@ -56,6 +58,7 @@ function App() {
           element={<PositionWeRecurit />}
           exact
         />
+        <Route path="/contact" element={<Contact />} exact />
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,239 @@
+.contact-ctn {
+  font-family: "Lato", sans-serif;
+  
+}
+
+
+.contact-header {
+  width: 100%;
+  padding: 2% 0;
+  text-align: center;
+  background-image: url(../../Assets/Images/Apply/HowToApplyBG.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  color: #fff;
+}
+
+.contact-header h1 {
+  width: 38%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.contact-header h2 {
+  width: 58%;
+  margin: 25px auto;
+  padding-bottom: 25px;
+  font-size: 28px;
+  text-transform: none;
+}
+
+.contact-main {
+    background-color: #f6f6f6;
+}
+
+.contact-main-header h2 {
+  width: 100%;
+  margin-top: 4%;
+  padding: 25px 0;
+  text-align: center;
+  background-color: #06a9ca;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.contact-main-below-header h3 {
+  /* width: 40%; */
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  border-bottom: 1px solid #000;
+  text-wrap: balance;
+}
+.contact-main--outer-header {
+  background-color: #fff;
+}
+
+.contact-main-below-header {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-address-maps {
+  flex-basis: 50%;
+
+  /* margin: 0 auto; */
+}
+
+.contact-address-maps h3 {
+  padding-bottom: 20px;
+}
+.contact-main-below-header figure {
+  flex-basis: 45%;
+}
+
+.contact-address-maps ul {
+  padding: 20px;
+  width: 80%;
+}
+.contact-address-maps ul li {
+  display: block;
+}
+.contact-address-maps ul li span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.contact-address-maps ul li p {
+  display: inline;
+  text-wrap: balance;
+  line-height: 1.5;
+}
+
+.contact-main-btn-section {
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../../Assets/Images/Contact/Tech-Contact.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contact-main-btn-section h3 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.contact-two-btns {
+  width: 35%;
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-two-btns a {
+  line-height: 47px;
+  font-size: 16px;
+  padding: 0 29px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  background-color: #06a9ca;
+  border-radius: 5px;
+}
+
+.contact-two-btns a:hover {
+  color: #06a9ca;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.contact-name-locations {
+  padding: 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+
+.contact-name-locations h3 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.contact-name-locations p {
+  font-style: italic;
+  font-size: 17px;
+}
+
+.contact-name-locations span {
+  font-size: 17px;
+}
+
+.contact-name-locations a {
+  width: 35%;
+  font-size: 12px;
+  margin: 10px 0;
+  padding: 3px 29px;
+  text-transform: uppercase;
+  color: #06a9ca;
+  border: 2px solid #06a9ca;
+  /* background-color: #06a9ca; */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contact-name-locations a:hover {
+  background-color: #06a9ca;
+  border: 2px solid transparent;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.contact-main-all-locations {
+  padding: 2% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact-main-all-locations li {
+  width: 50%;
+  padding-bottom: 5%;
+  text-align: center;
+  line-height: 2.1;
+}
+
+.contact-main-all-locations li h3 {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.contact-main-all-locations address span {
+  display: block;
+  font-size: 17px;
+}
+
+.contact-main-all-locations address a {
+  width: 35%;
+  font-size: 12px;
+  margin: 10px 0;
+  padding: 3px 29px;
+  text-transform: uppercase;
+  color: #06a9ca;
+  border: 2px solid #06a9ca;
+  /* background-color: #06a9ca; */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contact-main-all-locations address a:hover {
+  background-color: #06a9ca;
+  border: 2px solid transparent;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.contact-above-footer {
+  padding-bottom: 3%;
+}
+
+.contact-above-footer .mission-section-btm-container {
+  margin: 0;
+}

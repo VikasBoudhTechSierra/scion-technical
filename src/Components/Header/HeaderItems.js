@@ -18,8 +18,8 @@ export const NavItems = [
     path: "/temporary-staffing/start-up",
   },
   { id: 4, title: "apply", cName: "nav-item", path: "#FIXME" },
-  { id: 5, title: "hire", cName: "nav-item", path: "#FIXME" },
-  { id: 6, title: "contact", cName: "nav-item", path: "#FIXME" },
+  { id: 5, title: "hire", cName: "nav-item", path: "/hire" },
+  { id: 6, title: "contact", cName: "nav-item", path: "/contact" },
 ];
 
 export const applyDrop = [
@@ -47,5 +47,10 @@ export const applyDrop = [
     cName: "submenu-item",
     path: "/apply/position-we-recurit",
   },
-  { id: 5, title: "accounts", cName: "submenu-item", path: "/apply/accounts" },
+  {
+    id: 5,
+    title: "apply with us",
+    cName: "submenu-item",
+    path: "/apply/apply-with-us",
+  },
 ];

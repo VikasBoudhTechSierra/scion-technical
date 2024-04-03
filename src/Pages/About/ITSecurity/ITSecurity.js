@@ -20,7 +20,7 @@ const ITSecurity = () => {
         <TemporaryStuffingHeading
           h1={["Temporary IT Security Staffing Services"]}
           h3={[
-            " Hire The Best IT Security Staff On The Market For Your Team! We Staff All US Locations and Remote Roles!",
+            " Hire The Best IT Security Staff On The Market For Your Team! We Staff All India Locations and Remote Roles!",
           ]}
         />
 
@@ -29,10 +29,10 @@ const ITSecurity = () => {
             <TemporaryStuffingParaSection
               paragraph1="For a decade and a half, our local tech recruiting teams have connected skilled technology IT security talent with amazing companies and brands all over the US. We are happy to provide award-winning services for all of our clients nationwide. Our team of industry-expert recruiters have great success for one simple reason: We love what we do."
               h2={[
-                "Contract IT Security Staffing for all US Locations and Remote!",
+                "Contract IT Security Staffing for all India Locations and Remote!",
               ]}
               paragraph2="Our firm is a socially conscious staffing and recruiting firm that truly believes in making a positive impact in the communities we support and, via our staffing mission, help our clients and candidates excel professionally. We employ expert recruiters who can customize our process to meet the strategic hiring needs of your organization."
-              secondPara="When it comes to your IT security staffing needs, our award-winning recruiting team has you covered. In today’s cyber world, security is more important than ever. Keeping your company’s information and networks safe is crucial to long-lasting success. We have a diverse pool of nearly 14 million highly qualified candidate options and a nationwide footprint, and our regional offices can help your organization hire the talent you need for any state in the US. See the difference Scion Technology can make and contact us today to get started!"
+              secondPara="When it comes to your IT security staffing needs, our award-winning recruiting team has you covered. In today’s cyber world, security is more important than ever. Keeping your company’s information and networks safe is crucial to long-lasting success. We have a diverse pool of nearly 14 million highly qualified candidate options and a nationwide footprint, and our regional offices can help your organization hire the talent you need for any state in the US. See the difference Tech Sierra Technology can make and contact us today to get started!"
             />
           </div>
           <div className="itRightContainer">
