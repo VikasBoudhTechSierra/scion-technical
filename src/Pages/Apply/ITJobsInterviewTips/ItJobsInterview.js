@@ -137,11 +137,11 @@ const ITjobsInterview = () => {
               <br />
               <p>
                 Feedback is key: Following your client interview, promptly
-                connect with your Scion Recruiter. Your insightful feedback on
-                the meeting, interviewer, and company dynamics is invaluable in
-                guiding them to match you with the best opportunities. Remember,
-                all feedback, positive or constructive, is crucial for their
-                success in representing you.
+                connect with your Tech Sierra Recruiter. Your insightful
+                feedback on the meeting, interviewer, and company dynamics is
+                invaluable in guiding them to match you with the best
+                opportunities. Remember, all feedback, positive or constructive,
+                is crucial for their success in representing you.
               </p>
               <br />
               <p>
@@ -160,15 +160,17 @@ const ITjobsInterview = () => {
           </div>
           <div className="itjob-technologyStaffing">
             <p>
-              These IT Job Interviewing Tips are provided by Scion Technology
-              Staffing, an award-winning IT, technology and engineering staffing
-              agency and recruiting firm that connects leading corporations,
-              startups, and nonprofit organizations with the very best tech
-              talent.
+              These IT Job Interviewing Tips are provided by Tech Sierra
+              Technology Staffing, an award-winning IT, technology and
+              engineering staffing agency and recruiting firm that connects
+              leading corporations, startups, and nonprofit organizations with
+              the very best tech talent.
             </p>
           </div>
           <div class="ITjobs_section_btm_container">
-            <h2 class="ITjobs_section_main_title">More Job Seeker Information</h2>
+            <h2 class="ITjobs_section_main_title">
+              More Job Seeker Information
+            </h2>
 
             <ul className="ITjobs_section_btm_links">
               <li>
@@ -191,7 +193,5 @@ const ITjobsInterview = () => {
     </div>
   );
 };
-
-
 
 export default ITjobsInterview;

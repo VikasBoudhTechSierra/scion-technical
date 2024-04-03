@@ -29,10 +29,10 @@ const OurMissionValue = () => {
             <div>
               <h3 className="subsection-title">Our Name</h3>
               <p className="subsection-content">
-                Scion Technology takes its name from a sector that portion of a
-                plant which, when introduced to a new foundation or growth area,
-                we strategically place new talent to improve organizational
-                growth.
+                Tech Sierra Technology takes its name from a sector that portion
+                of a plant which, when introduced to a new foundation or growth
+                area, we strategically place new talent to improve
+                organizational growth.
               </p>
 
               <h3 className="subsection-title">Our Values</h3>

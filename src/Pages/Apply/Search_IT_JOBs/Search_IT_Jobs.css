@@ -1,0 +1,143 @@
+.searchItJobs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.searchItJobs .searchItJobsContainer {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.searchItJobs .searchItJobsContainer .searchItJobsLeft {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  margin-top: 80px;
+}
+
+.searchItJobs .searchItJobsContainer .searchItJobsRight {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.searchItJobs .searchItJobsContainer .searchItJobsRight .rightBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.searchItJobsDropdown {
+  width: 95%;
+}
+
+.custom-select {
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  border: 2px solid #777;
+}
+
+.custom-select select {
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+}
+
+.searchItJobsDropdown input {
+  width: 94%;
+  border: none;
+  padding: 20px 0px 0px 20px;
+}
+
+.searchBtn {
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  border: 2px solid #777;
+  font-weight: bold;
+}
+
+.searchItJobRightBox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  width: 35%;
+  margin: 1% 1% 1% 1%;
+  position: relative;
+  min-height: 356px;
+  padding: 13px 36px;
+  color: #000;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.searchItJobRightBox:hover {
+  background-color: #f3f2f2;
+}
+
+.searchItJobRightBox h3 {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #06a9ca;
+}
+
+.searchItJobRightBox p {
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.searchItJobRightBox button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 30px;
+  background-color: #06a9ca;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.searchItJobRightBox button:hover {
+  background-color: #0391ae;
+  color: #ffffff;
+}
+
+.pagination button {
+  padding: 10px;
+  margin: 50px 10px 0px 0px;
+}
+
+.pagination button .selected {
+  background-color: #06a9ca;
+  color: #ffffff;
+}
+
+.searchItJobsLeft .checkBox {
+  margin-top: 15px;
+}
+
+.searchItJobsLeft .checkBox label {
+  margin-left: 5px;
+}
+
+.leftCheckBoxContainer h3 {
+  font-weight: bold;
+  margin: 10px 0px 10px;
+}
+
+.leftCheckBoxContainer button {
+  padding: 8px;
+  margin: 5px 10px 0px 0px;
+  cursor: pointer;
+  background-color: #06a9ca;
+  color: #ffffff;
+  border: none;
+}

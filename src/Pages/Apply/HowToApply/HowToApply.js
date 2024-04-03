@@ -16,15 +16,16 @@ const HowToApply = () => {
         <div className="wrapper">
           <h2>Job Seekers / Apply For Technology & IT Jobs</h2>
           <p>
-            Find Your Perfect Job With Scion Technology | Apply for IT Jobs Now
+            Find Your Perfect Job With Tech Sierra Technology | Apply for IT
+            Jobs Now
           </p>
         </div>
       </div>
       <div className="HTAContent">
         <div className="wrapper">
-          <p>Scion Technology Makes Applying as Easy as 1, 2, 3!</p>
+          <p>Tech Sierra Technology Makes Applying as Easy as 1, 2, 3!</p>
           <p>
-            When you apply with Scion Technology, you have access to an
+            When you apply with Tech Sierra Technology, you have access to an
             incredible technology recruitment team that listens to your career
             objectives and needs. As an agency that was founded by passionate
             recruitment experts who are deeply networked, we offer expert advice
@@ -40,10 +41,10 @@ const HowToApply = () => {
             connections and resources for you.
           </p>
           <p>
-            At Scion Technology we have deep connections with industry-leading
-            decision makers. We do the work of creating lifelong relationships
-            with brands and corporations to ensure we are connecting you with
-            the best employer match.
+            At Tech Sierra Technology we have deep connections with
+            industry-leading decision makers. We do the work of creating
+            lifelong relationships with brands and corporations to ensure we are
+            connecting you with the best employer match.
           </p>
           <p>
             Please note: while it is our goal and mission to help as many

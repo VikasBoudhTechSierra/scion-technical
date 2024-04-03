@@ -19,9 +19,9 @@ const Startup = () => {
       </div>
       <div className="itContainer wrapper startUp-ctn">
         <TemporaryStuffingHeading
-          h1={["Award-Winning Startup Staffing Agency for All US Locations"]}
+          h1={["Award-Winning Startup Staffing Agency for All India Locations"]}
           h3={[
-            "Where innovation meets talent: your Startup’s staffing solution. Nationally recognized, Scion Technology provides top staffing services for Startups.",
+            "Where innovation meets talent: your Startup’s staffing solution. Nationally recognized, Tech Sierra Technology provides top staffing services for Startups.",
           ]}
         />
 
@@ -29,8 +29,8 @@ const Startup = () => {
           <div className="itLeftContainer">
             <TemporaryStuffingParaSection
               MainHeading="Startup Staffing Experts"
-              paragraph1="At Scion Technology, we are masters of the startup staffing game. We live and breathe tech, and we know exactly what it takes to find the perfect match for your growing business. With our insider knowledge of the constantly changing technology world, we are the ultimate matchmakers, connecting you with top-notch talent that will skyrocket your innovation, growth, and overall success. Our unrivaled commitment to excellence and our vast network of highly-qualified professionals make us the dream team for startups in search of extraordinary staffing solutions. With national locations throughout the country and an award-winning team, we make it easy for you to level up your team and company."
-              h2={["Why Choose Scion Technology?"]}
+              paragraph1="At Tech Sierra Technology, we are masters of the startup staffing game. We live and breathe tech, and we know exactly what it takes to find the perfect match for your growing business. With our insider knowledge of the constantly changing technology world, we are the ultimate matchmakers, connecting you with top-notch talent that will skyrocket your innovation, growth, and overall success. Our unrivaled commitment to excellence and our vast network of highly-qualified professionals make us the dream team for startups in search of extraordinary staffing solutions. With national locations throughout the country and an award-winning team, we make it easy for you to level up your team and company."
+              h2={["Why Choose Tech Sierra Technology?"]}
               paragraph2=""
               secondPara="We understand that finding the right talent is crucial for startups to thrive in the competitive tech industry. We offer several compelling reasons to partner with us:"
             />
@@ -84,10 +84,10 @@ const Startup = () => {
           <div className="itLeftContainer">
             <TemporaryStuffingParaSection
               // MainHeading="Startup Staffing Experts"
-              // paragraph1="At Scion Technology, we are masters of the startup staffing game. We live and breathe tech, and we know exactly what it takes to find the perfect match for your growing business. With our insider knowledge of the constantly changing technology world, we are the ultimate matchmakers, connecting you with top-notch talent that will skyrocket your innovation, growth, and overall success. Our unrivaled commitment to excellence and our vast network of highly-qualified professionals make us the dream team for startups in search of extraordinary staffing solutions. With national locations throughout the country and an award-winning team, we make it easy for you to level up your team and company."
+              // paragraph1="At Tech Sierra Technology, we are masters of the startup staffing game. We live and breathe tech, and we know exactly what it takes to find the perfect match for your growing business. With our insider knowledge of the constantly changing technology world, we are the ultimate matchmakers, connecting you with top-notch talent that will skyrocket your innovation, growth, and overall success. Our unrivaled commitment to excellence and our vast network of highly-qualified professionals make us the dream team for startups in search of extraordinary staffing solutions. With national locations throughout the country and an award-winning team, we make it easy for you to level up your team and company."
               h2={["Types of Startups We Serve"]}
               paragraph2=""
-              secondPara="Scion Technology provides services for tech startups in a wide range of sectors. Some of the startup types we specialize in include:"
+              secondPara="Tech Sierra Technology provides services for tech startups in a wide range of sectors. Some of the startup types we specialize in include:"
             />
             <ol className="startUp-lists">
               <li>
@@ -130,8 +130,8 @@ const Startup = () => {
             </ol>
             <p>
               These are just a few examples of the startup types we serve.
-              Regardless of your industry or niche, Scion Technology has the
-              expertise to connect you with the talented individuals who can
+              Regardless of your industry or niche, Tech Sierra Technology has
+              the expertise to connect you with the talented individuals who can
               drive your startup’s success.
             </p>
             <a href="#FIXME" target="_self" class="startUp-las">
